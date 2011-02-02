@@ -17,7 +17,7 @@ END
       aggregator.command 'hook_aggregator_process'
       aggregator.command 'hook_aggregator_process_info'
       aggregator.command 'hook_aggregator_remove'
-    end
+   end
     submenu.menu 'block' do |block|
       block.command 'hook_block_info'
       block.command 'hook_block_info_alter'
@@ -27,7 +27,7 @@ END
       block.command 'hook_block_view_alter'
       block.command 'hook_block_view_MODULE_DELTA_alter'
       block.command 'hook_block_list_alter'
-    end
+   end
     submenu.menu 'comment' do |comment|
       comment.command 'hook_comment_presave'
       comment.command 'hook_comment_insert'
@@ -38,14 +38,14 @@ END
       comment.command 'hook_comment_publish'
       comment.command 'hook_comment_unpublish'
       comment.command 'hook_comment_delete'
-    end
+   end
     submenu.menu 'contextual' do |contextual|
       contextual.command 'hook_contextual_links_view_alter'
-    end
+   end
     submenu.menu 'dashboard' do |dashboard|
       dashboard.command 'hook_dashboard_regions'
       dashboard.command 'hook_dashboard_regions_alter'
-    end
+   end
     submenu.menu 'field' do |field|
       field.command 'hook_field_extra_fields'
       field.command 'hook_field_extra_fields_alter'
@@ -125,18 +125,18 @@ END
       field.command 'hook_field_storage_purge_field_instance'
       field.command 'hook_field_storage_purge'
       field.command 'hook_field_access'
-    end
+   end
     submenu.menu 'field_ui' do |field_ui|
       field_ui.command 'hook_field_settings_form'
       field_ui.command 'hook_field_instance_settings_form'
       field_ui.command 'hook_field_widget_settings_form'
       field_ui.command 'hook_field_formatter_settings_form'
       field_ui.command 'hook_field_formatter_settings_summary'
-    end
+   end
     submenu.menu 'file' do |file|
       file.command 'hook_file_download_access'
       file.command 'hook_file_download_access_alter'
-    end
+   end
     submenu.menu 'filter' do |filter|
       filter.command 'hook_filter_info'
       filter.command 'hook_filter_info_alter'
@@ -147,10 +147,10 @@ END
       filter.command 'hook_filter_format_insert'
       filter.command 'hook_filter_format_update'
       filter.command 'hook_filter_format_disable'
-    end
+   end
     submenu.menu 'help' do |help|
       help.command 'hook_help'
-    end
+   end
     submenu.menu 'image' do |image|
       image.command 'hook_image_effect_info'
       image.command 'hook_image_effect_info_alter'
@@ -159,7 +159,7 @@ END
       image.command 'hook_image_style_flush'
       image.command 'hook_image_styles_alter'
       image.command 'hook_image_default_styles'
-    end
+   end
     submenu.menu 'locale' do |locale|
       locale.command 'hook_locale'
       locale.command 'hook_language_init'
@@ -170,12 +170,12 @@ END
       locale.command 'hook_language_negotiation_info_alter'
       locale.command 'hook_multilingual_settings_changed'
       locale.command 'hook_language_fallback_candidates_alter'
-    end
+   end
     submenu.menu 'menu' do |menu|
       menu.command 'hook_menu_insert'
       menu.command 'hook_menu_update'
       menu.command 'hook_menu_delete'
-    end
+   end
     submenu.menu 'node' do |node|
       node.command 'hook_node_grants'
       node.command 'hook_node_access_records'
@@ -209,7 +209,7 @@ END
       node.command 'hook_update'
       node.command 'hook_validate'
       node.command 'hook_view'
-    end
+   end
     submenu.menu 'openid' do |openid|
       openid.command 'hook_openid'
       openid.command 'hook_openid_response'
@@ -217,20 +217,20 @@ END
       openid.command 'hook_openid_discovery_method_info_alter'
       openid.command 'hook_openid_normalization_method_info'
       openid.command 'hook_openid_normalization_method_info_alter'
-    end
+   end
     submenu.menu 'overlay' do |overlay|
       overlay.command 'hook_overlay_parent_initialize'
       overlay.command 'hook_overlay_child_initialize'
-    end
+   end
     submenu.menu 'path' do |path|
       path.command 'hook_path_insert'
       path.command 'hook_path_update'
       path.command 'hook_path_delete'
-    end
+   end
     submenu.menu 'rdf' do |rdf|
       rdf.command 'hook_rdf_mapping'
       rdf.command 'hook_rdf_namespaces'
-    end
+   end
     submenu.menu 'search' do |search|
       search.command 'hook_search_info'
       search.command 'sample_search_conditions_callback'
@@ -242,16 +242,16 @@ END
       search.command 'hook_search_page'
       search.command 'hook_search_preprocess'
       search.command 'hook_update_index'
-    end
+   end
     submenu.menu 'shortcut' do |shortcut|
       shortcut.command 'hook_shortcut_default_set'
-    end
+   end
     submenu.menu 'simpletest' do |simpletest|
       simpletest.command 'hook_simpletest_alter'
       simpletest.command 'hook_test_group_started'
       simpletest.command 'hook_test_group_finished'
       simpletest.command 'hook_test_finished'
-    end
+   end
     submenu.menu 'system' do |system|
       system.command 'hook_hook_info'
       system.command 'hook_hook_info_alter'
@@ -370,7 +370,7 @@ END
       system.command 'hook_menu_site_status_alter'
       system.command 'hook_filetransfer_info'
       system.command 'hook_filetransfer_info_alter'
-    end
+   end
     submenu.menu 'taxonomy' do |taxonomy|
       taxonomy.command 'hook_taxonomy_vocabulary_load'
       taxonomy.command 'hook_taxonomy_vocabulary_presave'
@@ -383,16 +383,16 @@ END
       taxonomy.command 'hook_taxonomy_term_update'
       taxonomy.command 'hook_taxonomy_term_delete'
       taxonomy.command 'hook_taxonomy_term_view_alter'
-    end
+   end
     submenu.menu 'trigger' do |trigger|
       trigger.command 'hook_trigger_info'
       trigger.command 'hook_trigger_info_alter'
-    end
+   end
     submenu.menu 'update' do |update|
       update.command 'hook_update_projects_alter'
       update.command 'hook_update_status_alter'
       update.command 'hook_verify_update_archive'
-    end
+   end
     submenu.menu 'user' do |user|
       user.command 'hook_user_load'
       user.command 'hook_user_delete'
@@ -410,7 +410,206 @@ END
       user.command 'hook_user_role_insert'
       user.command 'hook_user_role_update'
       user.command 'hook_user_role_delete'
+   end
+  end
+  main_menu.menu 'Theme' do |submenu|
+   submenu.menu 'a' do |thememenu|
+      thememenu.command 'theme_admin_block'
+      thememenu.command 'theme_admin_block_content'
+      thememenu.command 'theme_admin_page'
+      thememenu.command 'theme_aggregator_block_item'
+      thememenu.command 'theme_aggregator_categorize_items'
+      thememenu.command 'theme_aggregator_page_opml'
+      thememenu.command 'theme_aggregator_page_rss'
+      thememenu.command 'theme_authorize_message'
+      thememenu.command 'theme_authorize_report'
+    end
+   submenu.menu 'b' do |thememenu|
+      thememenu.command 'theme_book_admin_table'
+      thememenu.command 'theme_book_title_link'
+      thememenu.command 'theme_breadcrumb'
+      thememenu.command 'theme_button'
+    end
+   submenu.menu 'c' do |thememenu|
+      thememenu.command 'theme_checkbox'
+      thememenu.command 'theme_checkboxes'
+      thememenu.command 'theme_color_scheme_form'
+      thememenu.command 'theme_comment_block'
+      thememenu.command 'theme_comment_post_forbidden'
+      thememenu.command 'theme_common_test_foo'
+      thememenu.command 'theme_confirm_form'
+      thememenu.command 'theme_container'
+    end
+   submenu.menu 'd' do |thememenu|
+      thememenu.command 'theme_dashboard'
+      thememenu.command 'theme_dashboard_admin'
+      thememenu.command 'theme_dashboard_disabled_block'
+      thememenu.command 'theme_dashboard_disabled_blocks'
+      thememenu.command 'theme_dashboard_region'
+      thememenu.command 'theme_date'
+      thememenu.command 'theme_dblog_message'
+      thememenu.command 'theme_disable'
+    end
+   submenu.menu 'e' do |thememenu|
+      thememenu.command 'theme_enable'
+      thememenu.command 'theme_exposed_filters'
+    end
+   submenu.menu 'f' do |thememenu|
+      thememenu.command 'theme_feed_icon'
+      thememenu.command 'theme_field'
+      thememenu.command 'theme_field_multiple_value_form'
+      thememenu.command 'theme_field_ui_table'
+      thememenu.command 'theme_fieldset'
+      thememenu.command 'theme_file'
+      thememenu.command 'theme_file_formatter_table'
+      thememenu.command 'theme_file_icon'
+      thememenu.command 'theme_file_link'
+      thememenu.command 'theme_file_managed_file'
+      thememenu.command 'theme_file_upload_help'
+      thememenu.command 'theme_file_widget'
+      thememenu.command 'theme_file_widget_multiple'
+      thememenu.command 'theme_filter_admin_format_filter_order'
+      thememenu.command 'theme_filter_admin_overview'
+      thememenu.command 'theme_filter_guidelines'
+      thememenu.command 'theme_filter_tips'
+      thememenu.command 'theme_filter_tips_more_info'
+      thememenu.command 'theme_form'
+      thememenu.command 'theme_form_element'
+      thememenu.command 'theme_form_element_label'
+      thememenu.command 'theme_form_required_marker'
+      thememenu.command 'theme_forum_form'
+    end
+   submenu.menu 'g' do |thememenu|
+      thememenu.command 'theme_get_registry'
+      thememenu.command 'theme_get_setting'
+      thememenu.command 'theme_get_suggestions'
+    end
+   submenu.menu 'h' do |thememenu|
+      thememenu.command 'theme_hidden'
+      thememenu.command 'theme_html_tag'
+    end
+   submenu.menu 'i' do |thememenu|
+      thememenu.command 'theme_image'
+      thememenu.command 'theme_image_anchor'
+      thememenu.command 'theme_image_button'
+      thememenu.command 'theme_image_crop_summary'
+      thememenu.command 'theme_image_formatter'
+      thememenu.command 'theme_image_resize_summary'
+      thememenu.command 'theme_image_rotate_summary'
+      thememenu.command 'theme_image_scale_summary'
+      thememenu.command 'theme_image_style'
+      thememenu.command 'theme_image_style_effects'
+      thememenu.command 'theme_image_style_list'
+      thememenu.command 'theme_image_style_preview'
+      thememenu.command 'theme_image_widget'
+      thememenu.command 'theme_indentation'
+      thememenu.command 'theme_install_page'
+      thememenu.command 'theme_item_list'
+    end
+   submenu.menu 'l' do |thememenu|
+      thememenu.command 'theme_link'
+      thememenu.command 'theme_links'
+      thememenu.command 'theme_locale_date_format_form'
+      thememenu.command 'theme_locale_languages_configure_form'
+      thememenu.command 'theme_locale_languages_overview_form'
+    end
+   submenu.menu 'm' do |thememenu|
+      thememenu.command 'theme_mark'
+      thememenu.command 'theme_menu_admin_overview'
+      thememenu.command 'theme_menu_link'
+      thememenu.command 'theme_menu_local_action'
+      thememenu.command 'theme_menu_local_task'
+      thememenu.command 'theme_menu_local_tasks'
+      thememenu.command 'theme_menu_overview_form'
+      thememenu.command 'theme_menu_tree'
+      thememenu.command 'theme_more_help_link'
+      thememenu.command 'theme_more_link'
+    end
+   submenu.menu 'n' do |thememenu|
+      thememenu.command 'theme_node_add_list'
+      thememenu.command 'theme_node_admin_overview'
+      thememenu.command 'theme_node_preview'
+      thememenu.command 'theme_node_recent_block'
+      thememenu.command 'theme_node_recent_content'
+      thememenu.command 'theme_node_search_admin'
+    end
+   submenu.menu 'o' do |thememenu|
+      thememenu.command 'theme_options_none'
+      thememenu.command 'theme_overlay_disable_message'
+    end
+   submenu.menu 'p' do |thememenu|
+      thememenu.command 'theme_pager'
+      thememenu.command 'theme_pager_first'
+      thememenu.command 'theme_pager_last'
+      thememenu.command 'theme_pager_link'
+      thememenu.command 'theme_pager_next'
+      thememenu.command 'theme_pager_previous'
+      thememenu.command 'theme_password'
+      thememenu.command 'theme_poll_choices'
+      thememenu.command 'theme_profile_admin_overview'
+      thememenu.command 'theme_progress_bar'
+    end
+   submenu.menu 'r' do |thememenu|
+      thememenu.command 'theme_radio'
+      thememenu.command 'theme_radios'
+      thememenu.command 'theme_rdf_metadata'
+      thememenu.command 'theme_rdf_template_variable_wrapper'
+      thememenu.command 'theme_render_template'
+    end
+   submenu.menu 's' do |thememenu|
+      thememenu.command 'theme_select'
+      thememenu.command 'theme_shortcut_set_customize'
+      thememenu.command 'theme_simpletest_result_summary'
+      thememenu.command 'theme_simpletest_test_table'
+      thememenu.command 'theme_status_messages'
+      thememenu.command 'theme_status_report'
+      thememenu.command 'theme_submit'
+      thememenu.command 'theme_system_admin_index'
+      thememenu.command 'theme_system_compact_link'
+      thememenu.command 'theme_system_date_time_settings'
+      thememenu.command 'theme_system_modules_fieldset'
+      thememenu.command 'theme_system_modules_incompatible'
+      thememenu.command 'theme_system_modules_uninstall'
+      thememenu.command 'theme_system_powered_by'
+      thememenu.command 'theme_system_settings_form'
+      thememenu.command 'theme_system_themes_page'
+    end
+   submenu.menu 't' do |thememenu|
+      thememenu.command 'theme_table'
+      thememenu.command 'theme_tableselect'
+      thememenu.command 'theme_tablesort_indicator'
+      thememenu.command 'theme_task_list'
+      thememenu.command 'theme_taxonomy_overview_terms'
+      thememenu.command 'theme_taxonomy_overview_vocabularies'
+      thememenu.command 'theme_test_exit'
+      thememenu.command 'theme_test_hook_init_page_callback'
+      thememenu.command 'theme_test_init'
+      thememenu.command 'theme_test_menu'
+      thememenu.command 'theme_test_preprocess_breadcrumb'
+      thememenu.command 'theme_text_format_wrapper'
+      thememenu.command 'theme_textarea'
+      thememenu.command 'theme_textfield'
+      thememenu.command 'theme_toolbar_toggle'
+      thememenu.command 'theme_trigger_display'
+    end
+   submenu.menu 'u' do |thememenu|
+      thememenu.command 'theme_update_last_check'
+      thememenu.command 'theme_update_manager_update_form'
+      thememenu.command 'theme_update_page'
+      thememenu.command 'theme_update_report'
+      thememenu.command 'theme_update_status_label'
+      thememenu.command 'theme_update_version'
+      thememenu.command 'theme_user_admin_permissions'
+      thememenu.command 'theme_user_admin_roles'
+      thememenu.command 'theme_user_list'
+      thememenu.command 'theme_user_permission_description'
+      thememenu.command 'theme_user_signature'
+      thememenu.command 'theme_username'
+    end
+   submenu.menu 'v' do |thememenu|
+      thememenu.command 'theme_vertical_tabs'
     end
   end
+  main_menu.command 'Documentation for Selection (Drupal 7)'
   end
 end
