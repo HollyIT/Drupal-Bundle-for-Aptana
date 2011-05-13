@@ -3,12 +3,13 @@ require 'ruble'
 bundle 'Drupal 7' do |bundle|
   bundle.author = 'Jamie Holly/HollyIT'
   bundle.contact_email_rot_13 = 'jamie@hollyit.net'
-  bundle.description =  <<END
-Development support for  <a href="http://drupal.org/">Drupal</a>.
-END
+  bundle.description = 'Development support for <a href="http://drupal.org/">Drupal</a>.'
   
   bundle.menu 'Drupal 7' do |main_menu|
   main_menu.menu 'Hooks' do |submenu|
+    submenu.menu 'Custom' do |custom|
+      custom.command 'hook_CUSTOM'
+    end
     submenu.menu 'aggregator' do |aggregator|
       aggregator.command 'hook_aggregator_fetch'
       aggregator.command 'hook_aggregator_fetch_info'
