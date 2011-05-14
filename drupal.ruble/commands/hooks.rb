@@ -4903,4 +4903,24 @@ function #{moduleName}_user_role_delete(\\$role) {
     end
   end
 
+command 'hook_CUSTOM' do |cmd|
+    require 'functions.rb'
+    cmd.trigger = 'hook_CUSTOM'
+    cmd.invoke do |context|
+    moduleName = find_module_name(ENV['TM_DIRECTORY'])
+    options = {}
+    options[:title] = "Hook Name"
+    options[:prompt] = "What is the hook name?"
+    hook = Ruble::UI.request_string(options)
+    func = moduleName + '_' + hook
+     "
+/**
+* Implements hook_#{hook}().
+*/
+function #{func}() { 
+  ${1}
+}"
+    end
+  end
+
 end
