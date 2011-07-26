@@ -9,8 +9,8 @@ with_defaults :scope => 'source.php', :input => :none, :output => :insert_as_sni
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_aggregator_fetch().
-*/
+ * Implements hook_aggregator_fetch().
+ */
 function #{moduleName}_aggregator_fetch(\\$feed) { 
   ${1}
 }"
@@ -23,8 +23,8 @@ function #{moduleName}_aggregator_fetch(\\$feed) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_aggregator_fetch_info().
-*/
+ * Implements hook_aggregator_fetch_info().
+ */
 function #{moduleName}_aggregator_fetch_info() { 
   ${1}
 }"
@@ -37,8 +37,8 @@ function #{moduleName}_aggregator_fetch_info() {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_aggregator_parse().
-*/
+ * Implements hook_aggregator_parse().
+ */
 function #{moduleName}_aggregator_parse(\\$feed) { 
   ${1}
 }"
@@ -51,8 +51,8 @@ function #{moduleName}_aggregator_parse(\\$feed) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_aggregator_parse_info().
-*/
+ * Implements hook_aggregator_parse_info().
+ */
 function #{moduleName}_aggregator_parse_info() { 
   ${1}
 }"
@@ -65,8 +65,8 @@ function #{moduleName}_aggregator_parse_info() {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_aggregator_process().
-*/
+ * Implements hook_aggregator_process().
+ */
 function #{moduleName}_aggregator_process(\\$feed) { 
   ${1}
 }"
@@ -79,8 +79,8 @@ function #{moduleName}_aggregator_process(\\$feed) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_aggregator_process_info().
-*/
+ * Implements hook_aggregator_process_info().
+ */
 function #{moduleName}_aggregator_process_info(\\$feed) { 
   ${1}
 }"
@@ -93,8 +93,8 @@ function #{moduleName}_aggregator_process_info(\\$feed) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_aggregator_remove().
-*/
+ * Implements hook_aggregator_remove().
+ */
 function #{moduleName}_aggregator_remove(\\$feed) { 
   ${1}
 }"
@@ -107,8 +107,8 @@ function #{moduleName}_aggregator_remove(\\$feed) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_block_info().
-*/
+ * Implements hook_block_info().
+ */
 function #{moduleName}_block_info() { 
   ${1}
 }"
@@ -121,8 +121,8 @@ function #{moduleName}_block_info() {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_block_info_alter().
-*/
+ * Implements hook_block_info_alter().
+ */
 function #{moduleName}_block_info_alter(&\\$blocks, \\$theme, \\$code_blocks) { 
   ${1}
 }"
@@ -135,8 +135,8 @@ function #{moduleName}_block_info_alter(&\\$blocks, \\$theme, \\$code_blocks) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_block_configure().
-*/
+ * Implements hook_block_configure().
+ */
 function #{moduleName}_block_configure(\\$delta = \'\') { 
   ${1}
 }"
@@ -149,8 +149,8 @@ function #{moduleName}_block_configure(\\$delta = \'\') {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_block_save().
-*/
+ * Implements hook_block_save().
+ */
 function #{moduleName}_block_save(\\$delta = \'\', \\$edit = array()) { 
   ${1}
 }"
@@ -163,8 +163,8 @@ function #{moduleName}_block_save(\\$delta = \'\', \\$edit = array()) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_block_view().
-*/
+ * Implements hook_block_view().
+ */
 function #{moduleName}_block_view(\\$delta = \'\') { 
   ${1}
 }"
@@ -177,8 +177,8 @@ function #{moduleName}_block_view(\\$delta = \'\') {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_block_view_alter().
-*/
+ * Implements hook_block_view_alter().
+ */
 function #{moduleName}_block_view_alter(&\\$data, \\$block) { 
   ${1}
 }"
@@ -191,8 +191,8 @@ function #{moduleName}_block_view_alter(&\\$data, \\$block) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_block_view_MODULE_DELTA_alter().
-*/
+ * Implements hook_block_view_MODULE_DELTA_alter().
+ */
 function #{moduleName}_block_view_MODULE_DELTA_alter(&\\$data, \\$block) { 
   ${1}
 }"
@@ -205,8 +205,8 @@ function #{moduleName}_block_view_MODULE_DELTA_alter(&\\$data, \\$block) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_block_list_alter().
-*/
+ * Implements hook_block_list_alter().
+ */
 function #{moduleName}_block_list_alter(&\\$blocks) { 
   ${1}
 }"
@@ -219,8 +219,8 @@ function #{moduleName}_block_list_alter(&\\$blocks) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_comment_presave().
-*/
+ * Implements hook_comment_presave().
+ */
 function #{moduleName}_comment_presave(\\$comment) { 
   ${1}
 }"
@@ -233,8 +233,8 @@ function #{moduleName}_comment_presave(\\$comment) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_comment_insert().
-*/
+ * Implements hook_comment_insert().
+ */
 function #{moduleName}_comment_insert(\\$comment) { 
   ${1}
 }"
@@ -247,8 +247,8 @@ function #{moduleName}_comment_insert(\\$comment) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_comment_update().
-*/
+ * Implements hook_comment_update().
+ */
 function #{moduleName}_comment_update(\\$comment) { 
   ${1}
 }"
@@ -261,8 +261,8 @@ function #{moduleName}_comment_update(\\$comment) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_comment_load().
-*/
+ * Implements hook_comment_load().
+ */
 function #{moduleName}_comment_load(\\$comments) { 
   ${1}
 }"
@@ -275,8 +275,8 @@ function #{moduleName}_comment_load(\\$comments) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_comment_view().
-*/
+ * Implements hook_comment_view().
+ */
 function #{moduleName}_comment_view(\\$comment, \\$view_mode, \\$langcode) { 
   ${1}
 }"
@@ -289,8 +289,8 @@ function #{moduleName}_comment_view(\\$comment, \\$view_mode, \\$langcode) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_comment_view_alter().
-*/
+ * Implements hook_comment_view_alter().
+ */
 function #{moduleName}_comment_view_alter(&\\$build) { 
   ${1}
 }"
@@ -303,8 +303,8 @@ function #{moduleName}_comment_view_alter(&\\$build) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_comment_publish().
-*/
+ * Implements hook_comment_publish().
+ */
 function #{moduleName}_comment_publish(\\$comment) { 
   ${1}
 }"
@@ -317,8 +317,8 @@ function #{moduleName}_comment_publish(\\$comment) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_comment_unpublish().
-*/
+ * Implements hook_comment_unpublish().
+ */
 function #{moduleName}_comment_unpublish(\\$comment) { 
   ${1}
 }"
@@ -331,8 +331,8 @@ function #{moduleName}_comment_unpublish(\\$comment) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_comment_delete().
-*/
+ * Implements hook_comment_delete().
+ */
 function #{moduleName}_comment_delete(\\$comment) { 
   ${1}
 }"
@@ -345,8 +345,8 @@ function #{moduleName}_comment_delete(\\$comment) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_contextual_links_view_alter().
-*/
+ * Implements hook_contextual_links_view_alter().
+ */
 function #{moduleName}_contextual_links_view_alter(&\\$element, \\$items) { 
   ${1}
 }"
@@ -359,8 +359,8 @@ function #{moduleName}_contextual_links_view_alter(&\\$element, \\$items) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_dashboard_regions().
-*/
+ * Implements hook_dashboard_regions().
+ */
 function #{moduleName}_dashboard_regions() { 
   ${1}
 }"
@@ -373,8 +373,8 @@ function #{moduleName}_dashboard_regions() {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_dashboard_regions_alter().
-*/
+ * Implements hook_dashboard_regions_alter().
+ */
 function #{moduleName}_dashboard_regions_alter(\\$regions) { 
   ${1}
 }"
@@ -387,8 +387,8 @@ function #{moduleName}_dashboard_regions_alter(\\$regions) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_field_extra_fields().
-*/
+ * Implements hook_field_extra_fields().
+ */
 function #{moduleName}_field_extra_fields() { 
   ${1}
 }"
@@ -401,8 +401,8 @@ function #{moduleName}_field_extra_fields() {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_field_extra_fields_alter().
-*/
+ * Implements hook_field_extra_fields_alter().
+ */
 function #{moduleName}_field_extra_fields_alter(&\\$info) { 
   ${1}
 }"
@@ -415,8 +415,8 @@ function #{moduleName}_field_extra_fields_alter(&\\$info) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_field_info().
-*/
+ * Implements hook_field_info().
+ */
 function #{moduleName}_field_info() { 
   ${1}
 }"
@@ -429,8 +429,8 @@ function #{moduleName}_field_info() {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_field_info_alter().
-*/
+ * Implements hook_field_info_alter().
+ */
 function #{moduleName}_field_info_alter(&\\$info) { 
   ${1}
 }"
@@ -443,8 +443,8 @@ function #{moduleName}_field_info_alter(&\\$info) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_field_schema().
-*/
+ * Implements hook_field_schema().
+ */
 function #{moduleName}_field_schema(\\$field) { 
   ${1}
 }"
@@ -457,8 +457,8 @@ function #{moduleName}_field_schema(\\$field) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_field_load().
-*/
+ * Implements hook_field_load().
+ */
 function #{moduleName}_field_load(\\$entity_type, \\$entities, \\$field, \\$instances, \\$langcode, &\\$items, \\$age) { 
   ${1}
 }"
@@ -471,8 +471,8 @@ function #{moduleName}_field_load(\\$entity_type, \\$entities, \\$field, \\$inst
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_field_prepare_view().
-*/
+ * Implements hook_field_prepare_view().
+ */
 function #{moduleName}_field_prepare_view(\\$entity_type, \\$entities, \\$field, \\$instances, \\$langcode, &\\$items) { 
   ${1}
 }"
@@ -485,8 +485,8 @@ function #{moduleName}_field_prepare_view(\\$entity_type, \\$entities, \\$field,
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_field_validate().
-*/
+ * Implements hook_field_validate().
+ */
 function #{moduleName}_field_validate(\\$entity_type, \\$entity, \\$field, \\$instance, \\$langcode, \\$items, &\\$errors) { 
   ${1}
 }"
@@ -499,8 +499,8 @@ function #{moduleName}_field_validate(\\$entity_type, \\$entity, \\$field, \\$in
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_field_presave().
-*/
+ * Implements hook_field_presave().
+ */
 function #{moduleName}_field_presave(\\$entity_type, \\$entity, \\$field, \\$instance, \\$langcode, &\\$items) { 
   ${1}
 }"
@@ -513,8 +513,8 @@ function #{moduleName}_field_presave(\\$entity_type, \\$entity, \\$field, \\$ins
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_field_insert().
-*/
+ * Implements hook_field_insert().
+ */
 function #{moduleName}_field_insert(\\$entity_type, \\$entity, \\$field, \\$instance, \\$langcode, &\\$items) { 
   ${1}
 }"
@@ -527,8 +527,8 @@ function #{moduleName}_field_insert(\\$entity_type, \\$entity, \\$field, \\$inst
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_field_update().
-*/
+ * Implements hook_field_update().
+ */
 function #{moduleName}_field_update(\\$entity_type, \\$entity, \\$field, \\$instance, \\$langcode, &\\$items) { 
   ${1}
 }"
@@ -541,8 +541,8 @@ function #{moduleName}_field_update(\\$entity_type, \\$entity, \\$field, \\$inst
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_field_storage_update_field().
-*/
+ * Implements hook_field_storage_update_field().
+ */
 function #{moduleName}_field_storage_update_field(\\$field, \\$prior_field, \\$has_data) { 
   ${1}
 }"
@@ -555,8 +555,8 @@ function #{moduleName}_field_storage_update_field(\\$field, \\$prior_field, \\$h
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_field_delete().
-*/
+ * Implements hook_field_delete().
+ */
 function #{moduleName}_field_delete(\\$entity_type, \\$entity, \\$field, \\$instance, \\$langcode, &\\$items) { 
   ${1}
 }"
@@ -569,8 +569,8 @@ function #{moduleName}_field_delete(\\$entity_type, \\$entity, \\$field, \\$inst
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_field_delete_revision().
-*/
+ * Implements hook_field_delete_revision().
+ */
 function #{moduleName}_field_delete_revision(\\$entity_type, \\$entity, \\$field, \\$instance, \\$langcode, &\\$items) { 
   ${1}
 }"
@@ -583,8 +583,8 @@ function #{moduleName}_field_delete_revision(\\$entity_type, \\$entity, \\$field
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_field_prepare_translation().
-*/
+ * Implements hook_field_prepare_translation().
+ */
 function #{moduleName}_field_prepare_translation(\\$entity_type, \\$entity, \\$field, \\$instance, \\$langcode, &\\$items, \\$source_entity, \\$source_langcode) { 
   ${1}
 }"
@@ -597,8 +597,8 @@ function #{moduleName}_field_prepare_translation(\\$entity_type, \\$entity, \\$f
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_field_is_empty().
-*/
+ * Implements hook_field_is_empty().
+ */
 function #{moduleName}_field_is_empty(\\$item, \\$field) { 
   ${1}
 }"
@@ -611,8 +611,8 @@ function #{moduleName}_field_is_empty(\\$item, \\$field) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_field_widget_info().
-*/
+ * Implements hook_field_widget_info().
+ */
 function #{moduleName}_field_widget_info() { 
   ${1}
 }"
@@ -625,8 +625,8 @@ function #{moduleName}_field_widget_info() {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_field_widget_info_alter().
-*/
+ * Implements hook_field_widget_info_alter().
+ */
 function #{moduleName}_field_widget_info_alter(&\\$info) { 
   ${1}
 }"
@@ -639,8 +639,8 @@ function #{moduleName}_field_widget_info_alter(&\\$info) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_field_widget_form().
-*/
+ * Implements hook_field_widget_form().
+ */
 function #{moduleName}_field_widget_form(&\\$form, &\\$form_state, \\$field, \\$instance, \\$langcode, \\$items, \\$delta, \\$element) { 
   ${1}
 }"
@@ -653,8 +653,8 @@ function #{moduleName}_field_widget_form(&\\$form, &\\$form_state, \\$field, \\$
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_field_widget_error().
-*/
+ * Implements hook_field_widget_error().
+ */
 function #{moduleName}_field_widget_error(\\$element, \\$error, \\$form, &\\$form_state) { 
   ${1}
 }"
@@ -667,8 +667,8 @@ function #{moduleName}_field_widget_error(\\$element, \\$error, \\$form, &\\$for
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_field_formatter_info().
-*/
+ * Implements hook_field_formatter_info().
+ */
 function #{moduleName}_field_formatter_info() { 
   ${1}
 }"
@@ -681,8 +681,8 @@ function #{moduleName}_field_formatter_info() {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_field_formatter_info_alter().
-*/
+ * Implements hook_field_formatter_info_alter().
+ */
 function #{moduleName}_field_formatter_info_alter(&\\$info) { 
   ${1}
 }"
@@ -695,8 +695,8 @@ function #{moduleName}_field_formatter_info_alter(&\\$info) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_field_formatter_prepare_view().
-*/
+ * Implements hook_field_formatter_prepare_view().
+ */
 function #{moduleName}_field_formatter_prepare_view(\\$entity_type, \\$entities, \\$field, \\$instances, \\$langcode, &\\$items, \\$displays) { 
   ${1}
 }"
@@ -709,8 +709,8 @@ function #{moduleName}_field_formatter_prepare_view(\\$entity_type, \\$entities,
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_field_formatter_view().
-*/
+ * Implements hook_field_formatter_view().
+ */
 function #{moduleName}_field_formatter_view(\\$entity_type, \\$entity, \\$field, \\$instance, \\$langcode, \\$items, \\$display) { 
   ${1}
 }"
@@ -723,8 +723,8 @@ function #{moduleName}_field_formatter_view(\\$entity_type, \\$entity, \\$field,
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_field_attach_form().
-*/
+ * Implements hook_field_attach_form().
+ */
 function #{moduleName}_field_attach_form(\\$entity_type, \\$entity, &\\$form, &\\$form_state, \\$langcode) { 
   ${1}
 }"
@@ -737,8 +737,8 @@ function #{moduleName}_field_attach_form(\\$entity_type, \\$entity, &\\$form, &\
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_field_attach_load().
-*/
+ * Implements hook_field_attach_load().
+ */
 function #{moduleName}_field_attach_load(\\$entity_type, &\\$entities, \\$age, \\$options) { 
   ${1}
 }"
@@ -751,8 +751,8 @@ function #{moduleName}_field_attach_load(\\$entity_type, &\\$entities, \\$age, \
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_field_attach_validate().
-*/
+ * Implements hook_field_attach_validate().
+ */
 function #{moduleName}_field_attach_validate(\\$entity_type, \\$entity, &\\$errors) { 
   ${1}
 }"
@@ -765,8 +765,8 @@ function #{moduleName}_field_attach_validate(\\$entity_type, \\$entity, &\\$erro
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_field_attach_submit().
-*/
+ * Implements hook_field_attach_submit().
+ */
 function #{moduleName}_field_attach_submit(\\$entity_type, \\$entity, \\$form, &\\$form_state) { 
   ${1}
 }"
@@ -779,8 +779,8 @@ function #{moduleName}_field_attach_submit(\\$entity_type, \\$entity, \\$form, &
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_field_attach_presave().
-*/
+ * Implements hook_field_attach_presave().
+ */
 function #{moduleName}_field_attach_presave(\\$entity_type, \\$entity) { 
   ${1}
 }"
@@ -793,8 +793,8 @@ function #{moduleName}_field_attach_presave(\\$entity_type, \\$entity) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_field_attach_insert().
-*/
+ * Implements hook_field_attach_insert().
+ */
 function #{moduleName}_field_attach_insert(\\$entity_type, \\$entity) { 
   ${1}
 }"
@@ -807,8 +807,8 @@ function #{moduleName}_field_attach_insert(\\$entity_type, \\$entity) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_field_attach_update().
-*/
+ * Implements hook_field_attach_update().
+ */
 function #{moduleName}_field_attach_update(\\$entity_type, \\$entity) { 
   ${1}
 }"
@@ -821,8 +821,8 @@ function #{moduleName}_field_attach_update(\\$entity_type, \\$entity) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_field_attach_preprocess_alter().
-*/
+ * Implements hook_field_attach_preprocess_alter().
+ */
 function #{moduleName}_field_attach_preprocess_alter(&\\$variables, \\$context) { 
   ${1}
 }"
@@ -835,8 +835,8 @@ function #{moduleName}_field_attach_preprocess_alter(&\\$variables, \\$context) 
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_field_attach_delete().
-*/
+ * Implements hook_field_attach_delete().
+ */
 function #{moduleName}_field_attach_delete(\\$entity_type, \\$entity) { 
   ${1}
 }"
@@ -849,8 +849,8 @@ function #{moduleName}_field_attach_delete(\\$entity_type, \\$entity) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_field_attach_delete_revision().
-*/
+ * Implements hook_field_attach_delete_revision().
+ */
 function #{moduleName}_field_attach_delete_revision(\\$entity_type, \\$entity) { 
   ${1}
 }"
@@ -863,8 +863,8 @@ function #{moduleName}_field_attach_delete_revision(\\$entity_type, \\$entity) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_field_attach_purge().
-*/
+ * Implements hook_field_attach_purge().
+ */
 function #{moduleName}_field_attach_purge(\\$entity_type, \\$entity, \\$field, \\$instance) { 
   ${1}
 }"
@@ -877,8 +877,8 @@ function #{moduleName}_field_attach_purge(\\$entity_type, \\$entity, \\$field, \
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_field_attach_view_alter().
-*/
+ * Implements hook_field_attach_view_alter().
+ */
 function #{moduleName}_field_attach_view_alter(&\\$output, \\$context) { 
   ${1}
 }"
@@ -891,8 +891,8 @@ function #{moduleName}_field_attach_view_alter(&\\$output, \\$context) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_field_attach_prepare_translation_alter().
-*/
+ * Implements hook_field_attach_prepare_translation_alter().
+ */
 function #{moduleName}_field_attach_prepare_translation_alter(&\\$entity, \\$context) { 
   ${1}
 }"
@@ -905,8 +905,8 @@ function #{moduleName}_field_attach_prepare_translation_alter(&\\$entity, \\$con
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_field_language_alter().
-*/
+ * Implements hook_field_language_alter().
+ */
 function #{moduleName}_field_language_alter(&\\$display_language, \\$context) { 
   ${1}
 }"
@@ -919,8 +919,8 @@ function #{moduleName}_field_language_alter(&\\$display_language, \\$context) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_field_available_languages_alter().
-*/
+ * Implements hook_field_available_languages_alter().
+ */
 function #{moduleName}_field_available_languages_alter(&\\$languages, \\$context) { 
   ${1}
 }"
@@ -933,8 +933,8 @@ function #{moduleName}_field_available_languages_alter(&\\$languages, \\$context
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_field_attach_create_bundle().
-*/
+ * Implements hook_field_attach_create_bundle().
+ */
 function #{moduleName}_field_attach_create_bundle(\\$entity_type, \\$bundle) { 
   ${1}
 }"
@@ -947,8 +947,8 @@ function #{moduleName}_field_attach_create_bundle(\\$entity_type, \\$bundle) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_field_attach_rename_bundle().
-*/
+ * Implements hook_field_attach_rename_bundle().
+ */
 function #{moduleName}_field_attach_rename_bundle(\\$entity_type, \\$bundle_old, \\$bundle_new) { 
   ${1}
 }"
@@ -961,8 +961,8 @@ function #{moduleName}_field_attach_rename_bundle(\\$entity_type, \\$bundle_old,
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_field_attach_delete_bundle().
-*/
+ * Implements hook_field_attach_delete_bundle().
+ */
 function #{moduleName}_field_attach_delete_bundle(\\$entity_type, \\$bundle, \\$instances) { 
   ${1}
 }"
@@ -975,8 +975,8 @@ function #{moduleName}_field_attach_delete_bundle(\\$entity_type, \\$bundle, \\$
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_field_storage_info().
-*/
+ * Implements hook_field_storage_info().
+ */
 function #{moduleName}_field_storage_info() { 
   ${1}
 }"
@@ -989,8 +989,8 @@ function #{moduleName}_field_storage_info() {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_field_storage_info_alter().
-*/
+ * Implements hook_field_storage_info_alter().
+ */
 function #{moduleName}_field_storage_info_alter(&\\$info) { 
   ${1}
 }"
@@ -1003,8 +1003,8 @@ function #{moduleName}_field_storage_info_alter(&\\$info) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_field_storage_details().
-*/
+ * Implements hook_field_storage_details().
+ */
 function #{moduleName}_field_storage_details(\\$field) { 
   ${1}
 }"
@@ -1017,8 +1017,8 @@ function #{moduleName}_field_storage_details(\\$field) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_field_storage_details_alter().
-*/
+ * Implements hook_field_storage_details_alter().
+ */
 function #{moduleName}_field_storage_details_alter(&\\$details, \\$field) { 
   ${1}
 }"
@@ -1031,8 +1031,8 @@ function #{moduleName}_field_storage_details_alter(&\\$details, \\$field) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_field_storage_load().
-*/
+ * Implements hook_field_storage_load().
+ */
 function #{moduleName}_field_storage_load(\\$entity_type, &\\$entities, \\$age, \\$fields, \\$options) { 
   ${1}
 }"
@@ -1045,8 +1045,8 @@ function #{moduleName}_field_storage_load(\\$entity_type, &\\$entities, \\$age, 
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_field_storage_write().
-*/
+ * Implements hook_field_storage_write().
+ */
 function #{moduleName}_field_storage_write(\\$entity_type, \\$entity, \\$op, \\$fields) { 
   ${1}
 }"
@@ -1059,8 +1059,8 @@ function #{moduleName}_field_storage_write(\\$entity_type, \\$entity, \\$op, \\$
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_field_storage_delete().
-*/
+ * Implements hook_field_storage_delete().
+ */
 function #{moduleName}_field_storage_delete(\\$entity_type, \\$entity, \\$fields) { 
   ${1}
 }"
@@ -1073,8 +1073,8 @@ function #{moduleName}_field_storage_delete(\\$entity_type, \\$entity, \\$fields
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_field_storage_delete_revision().
-*/
+ * Implements hook_field_storage_delete_revision().
+ */
 function #{moduleName}_field_storage_delete_revision(\\$entity_type, \\$entity, \\$fields) { 
   ${1}
 }"
@@ -1087,8 +1087,8 @@ function #{moduleName}_field_storage_delete_revision(\\$entity_type, \\$entity, 
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_field_storage_query().
-*/
+ * Implements hook_field_storage_query().
+ */
 function #{moduleName}_field_storage_query(\\$query) { 
   ${1}
 }"
@@ -1101,8 +1101,8 @@ function #{moduleName}_field_storage_query(\\$query) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_field_storage_create_field().
-*/
+ * Implements hook_field_storage_create_field().
+ */
 function #{moduleName}_field_storage_create_field(\\$field) { 
   ${1}
 }"
@@ -1115,8 +1115,8 @@ function #{moduleName}_field_storage_create_field(\\$field) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_field_storage_delete_field().
-*/
+ * Implements hook_field_storage_delete_field().
+ */
 function #{moduleName}_field_storage_delete_field(\\$field) { 
   ${1}
 }"
@@ -1129,8 +1129,8 @@ function #{moduleName}_field_storage_delete_field(\\$field) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_field_storage_delete_instance().
-*/
+ * Implements hook_field_storage_delete_instance().
+ */
 function #{moduleName}_field_storage_delete_instance(\\$instance) { 
   ${1}
 }"
@@ -1143,8 +1143,8 @@ function #{moduleName}_field_storage_delete_instance(\\$instance) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_field_storage_pre_load().
-*/
+ * Implements hook_field_storage_pre_load().
+ */
 function #{moduleName}_field_storage_pre_load(\\$entity_type, \\$entities, \\$age, &\\$skip_fields, \\$options) { 
   ${1}
 }"
@@ -1157,8 +1157,8 @@ function #{moduleName}_field_storage_pre_load(\\$entity_type, \\$entities, \\$ag
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_field_storage_pre_insert().
-*/
+ * Implements hook_field_storage_pre_insert().
+ */
 function #{moduleName}_field_storage_pre_insert(\\$entity_type, \\$entity, &\\$skip_fields) { 
   ${1}
 }"
@@ -1171,8 +1171,8 @@ function #{moduleName}_field_storage_pre_insert(\\$entity_type, \\$entity, &\\$s
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_field_storage_pre_update().
-*/
+ * Implements hook_field_storage_pre_update().
+ */
 function #{moduleName}_field_storage_pre_update(\\$entity_type, \\$entity, &\\$skip_fields) { 
   ${1}
 }"
@@ -1185,8 +1185,8 @@ function #{moduleName}_field_storage_pre_update(\\$entity_type, \\$entity, &\\$s
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_field_info_max_weight().
-*/
+ * Implements hook_field_info_max_weight().
+ */
 function #{moduleName}_field_info_max_weight(\\$entity_type, \\$bundle, \\$context) { 
   ${1}
 }"
@@ -1199,8 +1199,8 @@ function #{moduleName}_field_info_max_weight(\\$entity_type, \\$bundle, \\$conte
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_field_display_alter().
-*/
+ * Implements hook_field_display_alter().
+ */
 function #{moduleName}_field_display_alter(&\\$display, \\$context) { 
   ${1}
 }"
@@ -1213,8 +1213,8 @@ function #{moduleName}_field_display_alter(&\\$display, \\$context) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_field_display_ENTITY_TYPE_alter().
-*/
+ * Implements hook_field_display_ENTITY_TYPE_alter().
+ */
 function #{moduleName}_field_display_ENTITY_TYPE_alter(&\\$display, \\$context) { 
   ${1}
 }"
@@ -1227,8 +1227,8 @@ function #{moduleName}_field_display_ENTITY_TYPE_alter(&\\$display, \\$context) 
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_field_extra_fields_display_alter().
-*/
+ * Implements hook_field_extra_fields_display_alter().
+ */
 function #{moduleName}_field_extra_fields_display_alter(&\\$displays, \\$context) { 
   ${1}
 }"
@@ -1241,8 +1241,8 @@ function #{moduleName}_field_extra_fields_display_alter(&\\$displays, \\$context
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_field_widget_properties_alter().
-*/
+ * Implements hook_field_widget_properties_alter().
+ */
 function #{moduleName}_field_widget_properties_alter(&\\$widget, \\$context) { 
   ${1}
 }"
@@ -1255,8 +1255,8 @@ function #{moduleName}_field_widget_properties_alter(&\\$widget, \\$context) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_field_widget_properties_ENTITY_TYPE_alter().
-*/
+ * Implements hook_field_widget_properties_ENTITY_TYPE_alter().
+ */
 function #{moduleName}_field_widget_properties_ENTITY_TYPE_alter(&\\$widget, \\$context) { 
   ${1}
 }"
@@ -1269,8 +1269,8 @@ function #{moduleName}_field_widget_properties_ENTITY_TYPE_alter(&\\$widget, \\$
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_field_create_field().
-*/
+ * Implements hook_field_create_field().
+ */
 function #{moduleName}_field_create_field(\\$field) { 
   ${1}
 }"
@@ -1283,8 +1283,8 @@ function #{moduleName}_field_create_field(\\$field) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_field_create_instance().
-*/
+ * Implements hook_field_create_instance().
+ */
 function #{moduleName}_field_create_instance(\\$instance) { 
   ${1}
 }"
@@ -1297,8 +1297,8 @@ function #{moduleName}_field_create_instance(\\$instance) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_field_update_forbid().
-*/
+ * Implements hook_field_update_forbid().
+ */
 function #{moduleName}_field_update_forbid(\\$field, \\$prior_field, \\$has_data) { 
   ${1}
 }"
@@ -1311,8 +1311,8 @@ function #{moduleName}_field_update_forbid(\\$field, \\$prior_field, \\$has_data
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_field_update_field().
-*/
+ * Implements hook_field_update_field().
+ */
 function #{moduleName}_field_update_field(\\$field, \\$prior_field, \\$has_data) { 
   ${1}
 }"
@@ -1325,8 +1325,8 @@ function #{moduleName}_field_update_field(\\$field, \\$prior_field, \\$has_data)
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_field_delete_field().
-*/
+ * Implements hook_field_delete_field().
+ */
 function #{moduleName}_field_delete_field(\\$field) { 
   ${1}
 }"
@@ -1339,8 +1339,8 @@ function #{moduleName}_field_delete_field(\\$field) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_field_update_instance().
-*/
+ * Implements hook_field_update_instance().
+ */
 function #{moduleName}_field_update_instance(\\$instance, \\$prior_instance) { 
   ${1}
 }"
@@ -1353,8 +1353,8 @@ function #{moduleName}_field_update_instance(\\$instance, \\$prior_instance) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_field_delete_instance().
-*/
+ * Implements hook_field_delete_instance().
+ */
 function #{moduleName}_field_delete_instance(\\$instance) { 
   ${1}
 }"
@@ -1367,8 +1367,8 @@ function #{moduleName}_field_delete_instance(\\$instance) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_field_read_field().
-*/
+ * Implements hook_field_read_field().
+ */
 function #{moduleName}_field_read_field(&\\$field) { 
   ${1}
 }"
@@ -1381,8 +1381,8 @@ function #{moduleName}_field_read_field(&\\$field) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_field_read_instance().
-*/
+ * Implements hook_field_read_instance().
+ */
 function #{moduleName}_field_read_instance(\\$instance) { 
   ${1}
 }"
@@ -1395,8 +1395,8 @@ function #{moduleName}_field_read_instance(\\$instance) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_field_purge_field().
-*/
+ * Implements hook_field_purge_field().
+ */
 function #{moduleName}_field_purge_field(\\$field) { 
   ${1}
 }"
@@ -1409,8 +1409,8 @@ function #{moduleName}_field_purge_field(\\$field) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_field_purge_field_instance().
-*/
+ * Implements hook_field_purge_field_instance().
+ */
 function #{moduleName}_field_purge_field_instance(\\$instance) { 
   ${1}
 }"
@@ -1423,8 +1423,8 @@ function #{moduleName}_field_purge_field_instance(\\$instance) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_field_storage_purge_field().
-*/
+ * Implements hook_field_storage_purge_field().
+ */
 function #{moduleName}_field_storage_purge_field(\\$field) { 
   ${1}
 }"
@@ -1437,8 +1437,8 @@ function #{moduleName}_field_storage_purge_field(\\$field) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_field_storage_purge_field_instance().
-*/
+ * Implements hook_field_storage_purge_field_instance().
+ */
 function #{moduleName}_field_storage_purge_field_instance(\\$instance) { 
   ${1}
 }"
@@ -1451,8 +1451,8 @@ function #{moduleName}_field_storage_purge_field_instance(\\$instance) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_field_storage_purge().
-*/
+ * Implements hook_field_storage_purge().
+ */
 function #{moduleName}_field_storage_purge(\\$entity_type, \\$entity, \\$field, \\$instance) { 
   ${1}
 }"
@@ -1465,8 +1465,8 @@ function #{moduleName}_field_storage_purge(\\$entity_type, \\$entity, \\$field, 
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_field_access().
-*/
+ * Implements hook_field_access().
+ */
 function #{moduleName}_field_access(\\$op, \\$field, \\$entity_type, \\$entity, \\$account) { 
   ${1}
 }"
@@ -1479,8 +1479,8 @@ function #{moduleName}_field_access(\\$op, \\$field, \\$entity_type, \\$entity, 
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_field_settings_form().
-*/
+ * Implements hook_field_settings_form().
+ */
 function #{moduleName}_field_settings_form(\\$field, \\$instance, \\$has_data) { 
   ${1}
 }"
@@ -1493,8 +1493,8 @@ function #{moduleName}_field_settings_form(\\$field, \\$instance, \\$has_data) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_field_instance_settings_form().
-*/
+ * Implements hook_field_instance_settings_form().
+ */
 function #{moduleName}_field_instance_settings_form(\\$field, \\$instance) { 
   ${1}
 }"
@@ -1507,8 +1507,8 @@ function #{moduleName}_field_instance_settings_form(\\$field, \\$instance) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_field_widget_settings_form().
-*/
+ * Implements hook_field_widget_settings_form().
+ */
 function #{moduleName}_field_widget_settings_form(\\$field, \\$instance) { 
   ${1}
 }"
@@ -1521,8 +1521,8 @@ function #{moduleName}_field_widget_settings_form(\\$field, \\$instance) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_field_formatter_settings_form().
-*/
+ * Implements hook_field_formatter_settings_form().
+ */
 function #{moduleName}_field_formatter_settings_form(\\$field, \\$instance, \\$view_mode, \\$form, &\\$form_state) { 
   ${1}
 }"
@@ -1535,8 +1535,8 @@ function #{moduleName}_field_formatter_settings_form(\\$field, \\$instance, \\$v
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_field_formatter_settings_summary().
-*/
+ * Implements hook_field_formatter_settings_summary().
+ */
 function #{moduleName}_field_formatter_settings_summary(\\$field, \\$instance, \\$view_mode) { 
   ${1}
 }"
@@ -1549,8 +1549,8 @@ function #{moduleName}_field_formatter_settings_summary(\\$field, \\$instance, \
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_file_download_access().
-*/
+ * Implements hook_file_download_access().
+ */
 function #{moduleName}_file_download_access(\\$field, \\$entity_type, \\$entity) { 
   ${1}
 }"
@@ -1563,8 +1563,8 @@ function #{moduleName}_file_download_access(\\$field, \\$entity_type, \\$entity)
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_file_download_access_alter().
-*/
+ * Implements hook_file_download_access_alter().
+ */
 function #{moduleName}_file_download_access_alter(&\\$grants, \\$field, \\$entity_type, \\$entity) { 
   ${1}
 }"
@@ -1577,8 +1577,8 @@ function #{moduleName}_file_download_access_alter(&\\$grants, \\$field, \\$entit
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_filter_info().
-*/
+ * Implements hook_filter_info().
+ */
 function #{moduleName}_filter_info() { 
   ${1}
 }"
@@ -1591,8 +1591,8 @@ function #{moduleName}_filter_info() {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_filter_info_alter().
-*/
+ * Implements hook_filter_info_alter().
+ */
 function #{moduleName}_filter_info_alter(&\\$info) { 
   ${1}
 }"
@@ -1605,8 +1605,8 @@ function #{moduleName}_filter_info_alter(&\\$info) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_filter_FILTER_settings().
-*/
+ * Implements hook_filter_FILTER_settings().
+ */
 function #{moduleName}_filter_FILTER_settings(\\$form, &\\$form_state, \\$filter, \\$format, \\$defaults, \\$filters) { 
   ${1}
 }"
@@ -1619,8 +1619,8 @@ function #{moduleName}_filter_FILTER_settings(\\$form, &\\$form_state, \\$filter
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_filter_FILTER_prepare().
-*/
+ * Implements hook_filter_FILTER_prepare().
+ */
 function #{moduleName}_filter_FILTER_prepare(\\$text, \\$filter, \\$format, \\$langcode, \\$cache, \\$cache_id) { 
   ${1}
 }"
@@ -1633,8 +1633,8 @@ function #{moduleName}_filter_FILTER_prepare(\\$text, \\$filter, \\$format, \\$l
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_filter_FILTER_process().
-*/
+ * Implements hook_filter_FILTER_process().
+ */
 function #{moduleName}_filter_FILTER_process(\\$text, \\$filter, \\$format, \\$langcode, \\$cache, \\$cache_id) { 
   ${1}
 }"
@@ -1647,8 +1647,8 @@ function #{moduleName}_filter_FILTER_process(\\$text, \\$filter, \\$format, \\$l
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_filter_FILTER_tips().
-*/
+ * Implements hook_filter_FILTER_tips().
+ */
 function #{moduleName}_filter_FILTER_tips(\\$filter, \\$format, \\$long) { 
   ${1}
 }"
@@ -1661,8 +1661,8 @@ function #{moduleName}_filter_FILTER_tips(\\$filter, \\$format, \\$long) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_filter_format_insert().
-*/
+ * Implements hook_filter_format_insert().
+ */
 function #{moduleName}_filter_format_insert(\\$format) { 
   ${1}
 }"
@@ -1675,8 +1675,8 @@ function #{moduleName}_filter_format_insert(\\$format) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_filter_format_update().
-*/
+ * Implements hook_filter_format_update().
+ */
 function #{moduleName}_filter_format_update(\\$format) { 
   ${1}
 }"
@@ -1689,8 +1689,8 @@ function #{moduleName}_filter_format_update(\\$format) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_filter_format_disable().
-*/
+ * Implements hook_filter_format_disable().
+ */
 function #{moduleName}_filter_format_disable(\\$format) { 
   ${1}
 }"
@@ -1703,8 +1703,8 @@ function #{moduleName}_filter_format_disable(\\$format) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_help().
-*/
+ * Implements hook_help().
+ */
 function #{moduleName}_help(\\$path, \\$arg) { 
   ${1}
 }"
@@ -1717,8 +1717,8 @@ function #{moduleName}_help(\\$path, \\$arg) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_image_effect_info().
-*/
+ * Implements hook_image_effect_info().
+ */
 function #{moduleName}_image_effect_info() { 
   ${1}
 }"
@@ -1731,8 +1731,8 @@ function #{moduleName}_image_effect_info() {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_image_effect_info_alter().
-*/
+ * Implements hook_image_effect_info_alter().
+ */
 function #{moduleName}_image_effect_info_alter(&\\$effects) { 
   ${1}
 }"
@@ -1745,8 +1745,8 @@ function #{moduleName}_image_effect_info_alter(&\\$effects) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_image_style_save().
-*/
+ * Implements hook_image_style_save().
+ */
 function #{moduleName}_image_style_save(\\$style) { 
   ${1}
 }"
@@ -1759,8 +1759,8 @@ function #{moduleName}_image_style_save(\\$style) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_image_style_delete().
-*/
+ * Implements hook_image_style_delete().
+ */
 function #{moduleName}_image_style_delete(\\$style) { 
   ${1}
 }"
@@ -1773,8 +1773,8 @@ function #{moduleName}_image_style_delete(\\$style) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_image_style_flush().
-*/
+ * Implements hook_image_style_flush().
+ */
 function #{moduleName}_image_style_flush(\\$style) { 
   ${1}
 }"
@@ -1787,8 +1787,8 @@ function #{moduleName}_image_style_flush(\\$style) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_image_styles_alter().
-*/
+ * Implements hook_image_styles_alter().
+ */
 function #{moduleName}_image_styles_alter(&\\$styles) { 
   ${1}
 }"
@@ -1801,8 +1801,8 @@ function #{moduleName}_image_styles_alter(&\\$styles) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_image_default_styles().
-*/
+ * Implements hook_image_default_styles().
+ */
 function #{moduleName}_image_default_styles() { 
   ${1}
 }"
@@ -1815,8 +1815,8 @@ function #{moduleName}_image_default_styles() {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_locale().
-*/
+ * Implements hook_locale().
+ */
 function #{moduleName}_locale(\\$op = \'groups\') { 
   ${1}
 }"
@@ -1829,8 +1829,8 @@ function #{moduleName}_locale(\\$op = \'groups\') {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_language_init().
-*/
+ * Implements hook_language_init().
+ */
 function #{moduleName}_language_init() { 
   ${1}
 }"
@@ -1843,8 +1843,8 @@ function #{moduleName}_language_init() {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_language_switch_links_alter().
-*/
+ * Implements hook_language_switch_links_alter().
+ */
 function #{moduleName}_language_switch_links_alter(array &\\$links, \\$type, \\$path) { 
   ${1}
 }"
@@ -1857,8 +1857,8 @@ function #{moduleName}_language_switch_links_alter(array &\\$links, \\$type, \\$
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_language_types_info().
-*/
+ * Implements hook_language_types_info().
+ */
 function #{moduleName}_language_types_info() { 
   ${1}
 }"
@@ -1871,8 +1871,8 @@ function #{moduleName}_language_types_info() {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_language_types_info_alter().
-*/
+ * Implements hook_language_types_info_alter().
+ */
 function #{moduleName}_language_types_info_alter(array &\\$language_types) { 
   ${1}
 }"
@@ -1885,8 +1885,8 @@ function #{moduleName}_language_types_info_alter(array &\\$language_types) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_language_negotiation_info().
-*/
+ * Implements hook_language_negotiation_info().
+ */
 function #{moduleName}_language_negotiation_info() { 
   ${1}
 }"
@@ -1899,8 +1899,8 @@ function #{moduleName}_language_negotiation_info() {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_language_negotiation_info_alter().
-*/
+ * Implements hook_language_negotiation_info_alter().
+ */
 function #{moduleName}_language_negotiation_info_alter(array &\\$language_providers) { 
   ${1}
 }"
@@ -1913,8 +1913,8 @@ function #{moduleName}_language_negotiation_info_alter(array &\\$language_provid
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_multilingual_settings_changed().
-*/
+ * Implements hook_multilingual_settings_changed().
+ */
 function #{moduleName}_multilingual_settings_changed() { 
   ${1}
 }"
@@ -1927,8 +1927,8 @@ function #{moduleName}_multilingual_settings_changed() {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_language_fallback_candidates_alter().
-*/
+ * Implements hook_language_fallback_candidates_alter().
+ */
 function #{moduleName}_language_fallback_candidates_alter(array &\\$fallback_candidates) { 
   ${1}
 }"
@@ -1941,8 +1941,8 @@ function #{moduleName}_language_fallback_candidates_alter(array &\\$fallback_can
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_menu_insert().
-*/
+ * Implements hook_menu_insert().
+ */
 function #{moduleName}_menu_insert(\\$menu) { 
   ${1}
 }"
@@ -1955,8 +1955,8 @@ function #{moduleName}_menu_insert(\\$menu) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_menu_update().
-*/
+ * Implements hook_menu_update().
+ */
 function #{moduleName}_menu_update(\\$menu) { 
   ${1}
 }"
@@ -1969,8 +1969,8 @@ function #{moduleName}_menu_update(\\$menu) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_menu_delete().
-*/
+ * Implements hook_menu_delete().
+ */
 function #{moduleName}_menu_delete(\\$menu) { 
   ${1}
 }"
@@ -1983,8 +1983,8 @@ function #{moduleName}_menu_delete(\\$menu) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_node_grants().
-*/
+ * Implements hook_node_grants().
+ */
 function #{moduleName}_node_grants(\\$account, \\$op) { 
   ${1}
 }"
@@ -1997,8 +1997,8 @@ function #{moduleName}_node_grants(\\$account, \\$op) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_node_access_records().
-*/
+ * Implements hook_node_access_records().
+ */
 function #{moduleName}_node_access_records(\\$node) { 
   ${1}
 }"
@@ -2011,8 +2011,8 @@ function #{moduleName}_node_access_records(\\$node) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_node_access_records_alter().
-*/
+ * Implements hook_node_access_records_alter().
+ */
 function #{moduleName}_node_access_records_alter(&\\$grants, \\$node) { 
   ${1}
 }"
@@ -2025,8 +2025,8 @@ function #{moduleName}_node_access_records_alter(&\\$grants, \\$node) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_node_grants_alter().
-*/
+ * Implements hook_node_grants_alter().
+ */
 function #{moduleName}_node_grants_alter(&\\$grants, \\$account, \\$op) { 
   ${1}
 }"
@@ -2039,8 +2039,8 @@ function #{moduleName}_node_grants_alter(&\\$grants, \\$account, \\$op) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_node_operations().
-*/
+ * Implements hook_node_operations().
+ */
 function #{moduleName}_node_operations() { 
   ${1}
 }"
@@ -2053,8 +2053,8 @@ function #{moduleName}_node_operations() {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_node_delete().
-*/
+ * Implements hook_node_delete().
+ */
 function #{moduleName}_node_delete(\\$node) { 
   ${1}
 }"
@@ -2067,8 +2067,8 @@ function #{moduleName}_node_delete(\\$node) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_node_revision_delete().
-*/
+ * Implements hook_node_revision_delete().
+ */
 function #{moduleName}_node_revision_delete(\\$node) { 
   ${1}
 }"
@@ -2081,8 +2081,8 @@ function #{moduleName}_node_revision_delete(\\$node) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_node_insert().
-*/
+ * Implements hook_node_insert().
+ */
 function #{moduleName}_node_insert(\\$node) { 
   ${1}
 }"
@@ -2095,8 +2095,8 @@ function #{moduleName}_node_insert(\\$node) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_node_load().
-*/
+ * Implements hook_node_load().
+ */
 function #{moduleName}_node_load(\\$nodes, \\$types) { 
   ${1}
 }"
@@ -2109,8 +2109,8 @@ function #{moduleName}_node_load(\\$nodes, \\$types) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_node_access().
-*/
+ * Implements hook_node_access().
+ */
 function #{moduleName}_node_access(\\$node, \\$op, \\$account) { 
   ${1}
 }"
@@ -2123,8 +2123,8 @@ function #{moduleName}_node_access(\\$node, \\$op, \\$account) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_node_prepare().
-*/
+ * Implements hook_node_prepare().
+ */
 function #{moduleName}_node_prepare(\\$node) { 
   ${1}
 }"
@@ -2137,8 +2137,8 @@ function #{moduleName}_node_prepare(\\$node) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_node_search_result().
-*/
+ * Implements hook_node_search_result().
+ */
 function #{moduleName}_node_search_result(\\$node) { 
   ${1}
 }"
@@ -2151,8 +2151,8 @@ function #{moduleName}_node_search_result(\\$node) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_node_presave().
-*/
+ * Implements hook_node_presave().
+ */
 function #{moduleName}_node_presave(\\$node) { 
   ${1}
 }"
@@ -2165,8 +2165,8 @@ function #{moduleName}_node_presave(\\$node) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_node_update().
-*/
+ * Implements hook_node_update().
+ */
 function #{moduleName}_node_update(\\$node) { 
   ${1}
 }"
@@ -2179,8 +2179,8 @@ function #{moduleName}_node_update(\\$node) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_node_update_index().
-*/
+ * Implements hook_node_update_index().
+ */
 function #{moduleName}_node_update_index(\\$node) { 
   ${1}
 }"
@@ -2193,8 +2193,8 @@ function #{moduleName}_node_update_index(\\$node) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_node_validate().
-*/
+ * Implements hook_node_validate().
+ */
 function #{moduleName}_node_validate(\\$node, \\$form, &\\$form_state) { 
   ${1}
 }"
@@ -2207,8 +2207,8 @@ function #{moduleName}_node_validate(\\$node, \\$form, &\\$form_state) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_node_submit().
-*/
+ * Implements hook_node_submit().
+ */
 function #{moduleName}_node_submit(\\$node, \\$form, &\\$form_state) { 
   ${1}
 }"
@@ -2221,8 +2221,8 @@ function #{moduleName}_node_submit(\\$node, \\$form, &\\$form_state) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_node_view().
-*/
+ * Implements hook_node_view().
+ */
 function #{moduleName}_node_view(\\$node, \\$view_mode, \\$langcode) { 
   ${1}
 }"
@@ -2235,8 +2235,8 @@ function #{moduleName}_node_view(\\$node, \\$view_mode, \\$langcode) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_node_view_alter().
-*/
+ * Implements hook_node_view_alter().
+ */
 function #{moduleName}_node_view_alter(&\\$build) { 
   ${1}
 }"
@@ -2249,8 +2249,8 @@ function #{moduleName}_node_view_alter(&\\$build) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_node_info().
-*/
+ * Implements hook_node_info().
+ */
 function #{moduleName}_node_info() { 
   ${1}
 }"
@@ -2263,8 +2263,8 @@ function #{moduleName}_node_info() {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_ranking().
-*/
+ * Implements hook_ranking().
+ */
 function #{moduleName}_ranking() { 
   ${1}
 }"
@@ -2277,8 +2277,8 @@ function #{moduleName}_ranking() {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_node_type_insert().
-*/
+ * Implements hook_node_type_insert().
+ */
 function #{moduleName}_node_type_insert(\\$info) { 
   ${1}
 }"
@@ -2291,8 +2291,8 @@ function #{moduleName}_node_type_insert(\\$info) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_node_type_update().
-*/
+ * Implements hook_node_type_update().
+ */
 function #{moduleName}_node_type_update(\\$info) { 
   ${1}
 }"
@@ -2305,8 +2305,8 @@ function #{moduleName}_node_type_update(\\$info) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_node_type_delete().
-*/
+ * Implements hook_node_type_delete().
+ */
 function #{moduleName}_node_type_delete(\\$info) { 
   ${1}
 }"
@@ -2319,8 +2319,8 @@ function #{moduleName}_node_type_delete(\\$info) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_delete().
-*/
+ * Implements hook_delete().
+ */
 function #{moduleName}_delete(\\$node) { 
   ${1}
 }"
@@ -2333,8 +2333,8 @@ function #{moduleName}_delete(\\$node) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_prepare().
-*/
+ * Implements hook_prepare().
+ */
 function #{moduleName}_prepare(\\$node) { 
   ${1}
 }"
@@ -2347,8 +2347,8 @@ function #{moduleName}_prepare(\\$node) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_form().
-*/
+ * Implements hook_form().
+ */
 function #{moduleName}_form(\\$node, &\\$form_state) { 
   ${1}
 }"
@@ -2361,8 +2361,8 @@ function #{moduleName}_form(\\$node, &\\$form_state) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_insert().
-*/
+ * Implements hook_insert().
+ */
 function #{moduleName}_insert(\\$node) { 
   ${1}
 }"
@@ -2375,8 +2375,8 @@ function #{moduleName}_insert(\\$node) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_load().
-*/
+ * Implements hook_load().
+ */
 function #{moduleName}_load(\\$nodes) { 
   ${1}
 }"
@@ -2389,8 +2389,8 @@ function #{moduleName}_load(\\$nodes) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_update().
-*/
+ * Implements hook_update().
+ */
 function #{moduleName}_update(\\$node) { 
   ${1}
 }"
@@ -2403,8 +2403,8 @@ function #{moduleName}_update(\\$node) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_validate().
-*/
+ * Implements hook_validate().
+ */
 function #{moduleName}_validate(\\$node, \\$form, &\\$form_state) { 
   ${1}
 }"
@@ -2417,8 +2417,8 @@ function #{moduleName}_validate(\\$node, \\$form, &\\$form_state) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_view().
-*/
+ * Implements hook_view().
+ */
 function #{moduleName}_view(\\$node, \\$view_mode) { 
   ${1}
 }"
@@ -2431,8 +2431,8 @@ function #{moduleName}_view(\\$node, \\$view_mode) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_openid().
-*/
+ * Implements hook_openid().
+ */
 function #{moduleName}_openid(\\$op, \\$request) { 
   ${1}
 }"
@@ -2445,8 +2445,8 @@ function #{moduleName}_openid(\\$op, \\$request) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_openid_response().
-*/
+ * Implements hook_openid_response().
+ */
 function #{moduleName}_openid_response(\\$response, \\$account) { 
   ${1}
 }"
@@ -2459,8 +2459,8 @@ function #{moduleName}_openid_response(\\$response, \\$account) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_openid_discovery_method_info().
-*/
+ * Implements hook_openid_discovery_method_info().
+ */
 function #{moduleName}_openid_discovery_method_info() { 
   ${1}
 }"
@@ -2473,8 +2473,8 @@ function #{moduleName}_openid_discovery_method_info() {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_openid_discovery_method_info_alter().
-*/
+ * Implements hook_openid_discovery_method_info_alter().
+ */
 function #{moduleName}_openid_discovery_method_info_alter(&\\$methods) { 
   ${1}
 }"
@@ -2487,8 +2487,8 @@ function #{moduleName}_openid_discovery_method_info_alter(&\\$methods) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_openid_normalization_method_info().
-*/
+ * Implements hook_openid_normalization_method_info().
+ */
 function #{moduleName}_openid_normalization_method_info() { 
   ${1}
 }"
@@ -2501,8 +2501,8 @@ function #{moduleName}_openid_normalization_method_info() {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_openid_normalization_method_info_alter().
-*/
+ * Implements hook_openid_normalization_method_info_alter().
+ */
 function #{moduleName}_openid_normalization_method_info_alter(&\\$methods) { 
   ${1}
 }"
@@ -2515,8 +2515,8 @@ function #{moduleName}_openid_normalization_method_info_alter(&\\$methods) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_overlay_parent_initialize().
-*/
+ * Implements hook_overlay_parent_initialize().
+ */
 function #{moduleName}_overlay_parent_initialize() { 
   ${1}
 }"
@@ -2529,8 +2529,8 @@ function #{moduleName}_overlay_parent_initialize() {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_overlay_child_initialize().
-*/
+ * Implements hook_overlay_child_initialize().
+ */
 function #{moduleName}_overlay_child_initialize() { 
   ${1}
 }"
@@ -2543,8 +2543,8 @@ function #{moduleName}_overlay_child_initialize() {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_path_insert().
-*/
+ * Implements hook_path_insert().
+ */
 function #{moduleName}_path_insert(\\$path) { 
   ${1}
 }"
@@ -2557,8 +2557,8 @@ function #{moduleName}_path_insert(\\$path) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_path_update().
-*/
+ * Implements hook_path_update().
+ */
 function #{moduleName}_path_update(\\$path) { 
   ${1}
 }"
@@ -2571,8 +2571,8 @@ function #{moduleName}_path_update(\\$path) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_path_delete().
-*/
+ * Implements hook_path_delete().
+ */
 function #{moduleName}_path_delete(\\$path) { 
   ${1}
 }"
@@ -2585,8 +2585,8 @@ function #{moduleName}_path_delete(\\$path) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_rdf_mapping().
-*/
+ * Implements hook_rdf_mapping().
+ */
 function #{moduleName}_rdf_mapping() { 
   ${1}
 }"
@@ -2599,8 +2599,8 @@ function #{moduleName}_rdf_mapping() {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_rdf_namespaces().
-*/
+ * Implements hook_rdf_namespaces().
+ */
 function #{moduleName}_rdf_namespaces() { 
   ${1}
 }"
@@ -2613,8 +2613,8 @@ function #{moduleName}_rdf_namespaces() {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_search_info().
-*/
+ * Implements hook_search_info().
+ */
 function #{moduleName}_search_info() { 
   ${1}
 }"
@@ -2641,8 +2641,8 @@ function function sample_search_conditions_callback(\\$keys) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_search_access().
-*/
+ * Implements hook_search_access().
+ */
 function #{moduleName}_search_access() { 
   ${1}
 }"
@@ -2655,8 +2655,8 @@ function #{moduleName}_search_access() {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_search_reset().
-*/
+ * Implements hook_search_reset().
+ */
 function #{moduleName}_search_reset() { 
   ${1}
 }"
@@ -2669,8 +2669,8 @@ function #{moduleName}_search_reset() {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_search_status().
-*/
+ * Implements hook_search_status().
+ */
 function #{moduleName}_search_status() { 
   ${1}
 }"
@@ -2683,8 +2683,8 @@ function #{moduleName}_search_status() {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_search_admin().
-*/
+ * Implements hook_search_admin().
+ */
 function #{moduleName}_search_admin() { 
   ${1}
 }"
@@ -2697,8 +2697,8 @@ function #{moduleName}_search_admin() {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_search_execute().
-*/
+ * Implements hook_search_execute().
+ */
 function #{moduleName}_search_execute(\\$keys = NULL, \\$conditions = NULL) { 
   ${1}
 }"
@@ -2711,8 +2711,8 @@ function #{moduleName}_search_execute(\\$keys = NULL, \\$conditions = NULL) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_search_page().
-*/
+ * Implements hook_search_page().
+ */
 function #{moduleName}_search_page(\\$results) { 
   ${1}
 }"
@@ -2725,8 +2725,8 @@ function #{moduleName}_search_page(\\$results) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_search_preprocess().
-*/
+ * Implements hook_search_preprocess().
+ */
 function #{moduleName}_search_preprocess(\\$text) { 
   ${1}
 }"
@@ -2739,8 +2739,8 @@ function #{moduleName}_search_preprocess(\\$text) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_update_index().
-*/
+ * Implements hook_update_index().
+ */
 function #{moduleName}_update_index() { 
   ${1}
 }"
@@ -2753,8 +2753,8 @@ function #{moduleName}_update_index() {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_shortcut_default_set().
-*/
+ * Implements hook_shortcut_default_set().
+ */
 function #{moduleName}_shortcut_default_set(\\$account) { 
   ${1}
 }"
@@ -2767,8 +2767,8 @@ function #{moduleName}_shortcut_default_set(\\$account) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_simpletest_alter().
-*/
+ * Implements hook_simpletest_alter().
+ */
 function #{moduleName}_simpletest_alter(&\\$groups) { 
   ${1}
 }"
@@ -2781,8 +2781,8 @@ function #{moduleName}_simpletest_alter(&\\$groups) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_test_group_started().
-*/
+ * Implements hook_test_group_started().
+ */
 function #{moduleName}_test_group_started() { 
   ${1}
 }"
@@ -2795,8 +2795,8 @@ function #{moduleName}_test_group_started() {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_test_group_finished().
-*/
+ * Implements hook_test_group_finished().
+ */
 function #{moduleName}_test_group_finished() { 
   ${1}
 }"
@@ -2809,8 +2809,8 @@ function #{moduleName}_test_group_finished() {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_test_finished().
-*/
+ * Implements hook_test_finished().
+ */
 function #{moduleName}_test_finished(\\$results) { 
   ${1}
 }"
@@ -2823,8 +2823,8 @@ function #{moduleName}_test_finished(\\$results) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_hook_info().
-*/
+ * Implements hook_hook_info().
+ */
 function #{moduleName}_hook_info() { 
   ${1}
 }"
@@ -2837,8 +2837,8 @@ function #{moduleName}_hook_info() {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_hook_info_alter().
-*/
+ * Implements hook_hook_info_alter().
+ */
 function #{moduleName}_hook_info_alter(&\\$hooks) { 
   ${1}
 }"
@@ -2851,8 +2851,8 @@ function #{moduleName}_hook_info_alter(&\\$hooks) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_entity_info().
-*/
+ * Implements hook_entity_info().
+ */
 function #{moduleName}_entity_info() { 
   ${1}
 }"
@@ -2865,8 +2865,8 @@ function #{moduleName}_entity_info() {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_entity_info_alter().
-*/
+ * Implements hook_entity_info_alter().
+ */
 function #{moduleName}_entity_info_alter(&\\$entity_info) { 
   ${1}
 }"
@@ -2879,8 +2879,8 @@ function #{moduleName}_entity_info_alter(&\\$entity_info) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_entity_load().
-*/
+ * Implements hook_entity_load().
+ */
 function #{moduleName}_entity_load(\\$entities, \\$type) { 
   ${1}
 }"
@@ -2893,8 +2893,8 @@ function #{moduleName}_entity_load(\\$entities, \\$type) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_entity_presave().
-*/
+ * Implements hook_entity_presave().
+ */
 function #{moduleName}_entity_presave(\\$entity, \\$type) { 
   ${1}
 }"
@@ -2907,8 +2907,8 @@ function #{moduleName}_entity_presave(\\$entity, \\$type) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_entity_insert().
-*/
+ * Implements hook_entity_insert().
+ */
 function #{moduleName}_entity_insert(\\$entity, \\$type) { 
   ${1}
 }"
@@ -2921,8 +2921,8 @@ function #{moduleName}_entity_insert(\\$entity, \\$type) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_entity_update().
-*/
+ * Implements hook_entity_update().
+ */
 function #{moduleName}_entity_update(\\$entity, \\$type) { 
   ${1}
 }"
@@ -2935,8 +2935,8 @@ function #{moduleName}_entity_update(\\$entity, \\$type) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_entity_delete().
-*/
+ * Implements hook_entity_delete().
+ */
 function #{moduleName}_entity_delete(\\$entity, \\$type) { 
   ${1}
 }"
@@ -2949,8 +2949,8 @@ function #{moduleName}_entity_delete(\\$entity, \\$type) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_entity_query_alter().
-*/
+ * Implements hook_entity_query_alter().
+ */
 function #{moduleName}_entity_query_alter(\\$query) { 
   ${1}
 }"
@@ -2963,8 +2963,8 @@ function #{moduleName}_entity_query_alter(\\$query) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_entity_view().
-*/
+ * Implements hook_entity_view().
+ */
 function #{moduleName}_entity_view(\\$entity, \\$type, \\$view_mode, \\$langcode) { 
   ${1}
 }"
@@ -2977,8 +2977,8 @@ function #{moduleName}_entity_view(\\$entity, \\$type, \\$view_mode, \\$langcode
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_entity_view_alter().
-*/
+ * Implements hook_entity_view_alter().
+ */
 function #{moduleName}_entity_view_alter(&\\$build, \\$type) { 
   ${1}
 }"
@@ -2991,8 +2991,8 @@ function #{moduleName}_entity_view_alter(&\\$build, \\$type) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_admin_paths().
-*/
+ * Implements hook_admin_paths().
+ */
 function #{moduleName}_admin_paths() { 
   ${1}
 }"
@@ -3005,8 +3005,8 @@ function #{moduleName}_admin_paths() {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_admin_paths_alter().
-*/
+ * Implements hook_admin_paths_alter().
+ */
 function #{moduleName}_admin_paths_alter(&\\$paths) { 
   ${1}
 }"
@@ -3019,8 +3019,8 @@ function #{moduleName}_admin_paths_alter(&\\$paths) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_entity_prepare_view().
-*/
+ * Implements hook_entity_prepare_view().
+ */
 function #{moduleName}_entity_prepare_view(\\$entities, \\$type) { 
   ${1}
 }"
@@ -3033,8 +3033,8 @@ function #{moduleName}_entity_prepare_view(\\$entities, \\$type) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_cron().
-*/
+ * Implements hook_cron().
+ */
 function #{moduleName}_cron() { 
   ${1}
 }"
@@ -3047,8 +3047,8 @@ function #{moduleName}_cron() {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_cron_queue_info().
-*/
+ * Implements hook_cron_queue_info().
+ */
 function #{moduleName}_cron_queue_info() { 
   ${1}
 }"
@@ -3061,8 +3061,8 @@ function #{moduleName}_cron_queue_info() {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_cron_queue_info_alter().
-*/
+ * Implements hook_cron_queue_info_alter().
+ */
 function #{moduleName}_cron_queue_info_alter(&\\$queues) { 
   ${1}
 }"
@@ -3075,8 +3075,8 @@ function #{moduleName}_cron_queue_info_alter(&\\$queues) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_element_info().
-*/
+ * Implements hook_element_info().
+ */
 function #{moduleName}_element_info() { 
   ${1}
 }"
@@ -3089,8 +3089,8 @@ function #{moduleName}_element_info() {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_element_info_alter().
-*/
+ * Implements hook_element_info_alter().
+ */
 function #{moduleName}_element_info_alter(&\\$type) { 
   ${1}
 }"
@@ -3103,8 +3103,8 @@ function #{moduleName}_element_info_alter(&\\$type) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_exit().
-*/
+ * Implements hook_exit().
+ */
 function #{moduleName}_exit(\\$destination = NULL) { 
   ${1}
 }"
@@ -3117,8 +3117,8 @@ function #{moduleName}_exit(\\$destination = NULL) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_js_alter().
-*/
+ * Implements hook_js_alter().
+ */
 function #{moduleName}_js_alter(&\\$javascript) { 
   ${1}
 }"
@@ -3131,8 +3131,8 @@ function #{moduleName}_js_alter(&\\$javascript) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_library().
-*/
+ * Implements hook_library().
+ */
 function #{moduleName}_library() { 
   ${1}
 }"
@@ -3145,8 +3145,8 @@ function #{moduleName}_library() {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_library_alter().
-*/
+ * Implements hook_library_alter().
+ */
 function #{moduleName}_library_alter(&\\$libraries, \\$module) { 
   ${1}
 }"
@@ -3159,8 +3159,8 @@ function #{moduleName}_library_alter(&\\$libraries, \\$module) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_css_alter().
-*/
+ * Implements hook_css_alter().
+ */
 function #{moduleName}_css_alter(&\\$css) { 
   ${1}
 }"
@@ -3173,8 +3173,8 @@ function #{moduleName}_css_alter(&\\$css) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_ajax_render_alter().
-*/
+ * Implements hook_ajax_render_alter().
+ */
 function #{moduleName}_ajax_render_alter(\\$commands) { 
   ${1}
 }"
@@ -3187,8 +3187,8 @@ function #{moduleName}_ajax_render_alter(\\$commands) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_page_build().
-*/
+ * Implements hook_page_build().
+ */
 function #{moduleName}_page_build(&\\$page) { 
   ${1}
 }"
@@ -3201,8 +3201,8 @@ function #{moduleName}_page_build(&\\$page) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_menu_get_item_alter().
-*/
+ * Implements hook_menu_get_item_alter().
+ */
 function #{moduleName}_menu_get_item_alter(&\\$router_item, \\$path, \\$original_map) { 
   ${1}
 }"
@@ -3215,8 +3215,8 @@ function #{moduleName}_menu_get_item_alter(&\\$router_item, \\$path, \\$original
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_menu().
-*/
+ * Implements hook_menu().
+ */
 function #{moduleName}_menu() { 
   ${1}
 }"
@@ -3229,8 +3229,8 @@ function #{moduleName}_menu() {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_menu_alter().
-*/
+ * Implements hook_menu_alter().
+ */
 function #{moduleName}_menu_alter(&\\$items) { 
   ${1}
 }"
@@ -3243,8 +3243,8 @@ function #{moduleName}_menu_alter(&\\$items) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_menu_link_alter().
-*/
+ * Implements hook_menu_link_alter().
+ */
 function #{moduleName}_menu_link_alter(&\\$item) { 
   ${1}
 }"
@@ -3257,8 +3257,8 @@ function #{moduleName}_menu_link_alter(&\\$item) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_translated_menu_link_alter().
-*/
+ * Implements hook_translated_menu_link_alter().
+ */
 function #{moduleName}_translated_menu_link_alter(&\\$item, \\$map) { 
   ${1}
 }"
@@ -3271,8 +3271,8 @@ function #{moduleName}_translated_menu_link_alter(&\\$item, \\$map) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_menu_link_insert().
-*/
+ * Implements hook_menu_link_insert().
+ */
 function #{moduleName}_menu_link_insert(\\$link) { 
   ${1}
 }"
@@ -3285,8 +3285,8 @@ function #{moduleName}_menu_link_insert(\\$link) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_menu_link_update().
-*/
+ * Implements hook_menu_link_update().
+ */
 function #{moduleName}_menu_link_update(\\$link) { 
   ${1}
 }"
@@ -3299,8 +3299,8 @@ function #{moduleName}_menu_link_update(\\$link) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_menu_link_delete().
-*/
+ * Implements hook_menu_link_delete().
+ */
 function #{moduleName}_menu_link_delete(\\$link) { 
   ${1}
 }"
@@ -3313,8 +3313,8 @@ function #{moduleName}_menu_link_delete(\\$link) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_menu_local_tasks_alter().
-*/
+ * Implements hook_menu_local_tasks_alter().
+ */
 function #{moduleName}_menu_local_tasks_alter(&\\$data, \\$router_item, \\$root_path) { 
   ${1}
 }"
@@ -3327,8 +3327,8 @@ function #{moduleName}_menu_local_tasks_alter(&\\$data, \\$router_item, \\$root_
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_menu_breadcrumb_alter().
-*/
+ * Implements hook_menu_breadcrumb_alter().
+ */
 function #{moduleName}_menu_breadcrumb_alter(&\\$active_trail, \\$item) { 
   ${1}
 }"
@@ -3341,8 +3341,8 @@ function #{moduleName}_menu_breadcrumb_alter(&\\$active_trail, \\$item) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_menu_contextual_links_alter().
-*/
+ * Implements hook_menu_contextual_links_alter().
+ */
 function #{moduleName}_menu_contextual_links_alter(&\\$links, \\$router_item, \\$root_path) { 
   ${1}
 }"
@@ -3355,8 +3355,8 @@ function #{moduleName}_menu_contextual_links_alter(&\\$links, \\$router_item, \\
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_page_alter().
-*/
+ * Implements hook_page_alter().
+ */
 function #{moduleName}_page_alter(&\\$page) { 
   ${1}
 }"
@@ -3369,8 +3369,8 @@ function #{moduleName}_page_alter(&\\$page) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_form_alter().
-*/
+ * Implements hook_form_alter().
+ */
 function #{moduleName}_form_alter(&\\$form, &\\$form_state, \\$form_id) { 
   ${1}
 }"
@@ -3383,8 +3383,8 @@ function #{moduleName}_form_alter(&\\$form, &\\$form_state, \\$form_id) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_form_FORM_ID_alter().
-*/
+ * Implements hook_form_FORM_ID_alter().
+ */
 function #{moduleName}_form_FORM_ID_alter(&\\$form, &\\$form_state, \\$form_id) { 
   ${1}
 }"
@@ -3397,8 +3397,8 @@ function #{moduleName}_form_FORM_ID_alter(&\\$form, &\\$form_state, \\$form_id) 
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_form_BASE_FORM_ID_alter().
-*/
+ * Implements hook_form_BASE_FORM_ID_alter().
+ */
 function #{moduleName}_form_BASE_FORM_ID_alter(&\\$form, &\\$form_state, \\$form_id) { 
   ${1}
 }"
@@ -3411,8 +3411,8 @@ function #{moduleName}_form_BASE_FORM_ID_alter(&\\$form, &\\$form_state, \\$form
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_forms().
-*/
+ * Implements hook_forms().
+ */
 function #{moduleName}_forms(\\$form_id, \\$args) { 
   ${1}
 }"
@@ -3425,8 +3425,8 @@ function #{moduleName}_forms(\\$form_id, \\$args) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_boot().
-*/
+ * Implements hook_boot().
+ */
 function #{moduleName}_boot() { 
   ${1}
 }"
@@ -3439,8 +3439,8 @@ function #{moduleName}_boot() {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_init().
-*/
+ * Implements hook_init().
+ */
 function #{moduleName}_init() { 
   ${1}
 }"
@@ -3453,8 +3453,8 @@ function #{moduleName}_init() {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_image_toolkits().
-*/
+ * Implements hook_image_toolkits().
+ */
 function #{moduleName}_image_toolkits() { 
   ${1}
 }"
@@ -3467,8 +3467,8 @@ function #{moduleName}_image_toolkits() {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_mail_alter().
-*/
+ * Implements hook_mail_alter().
+ */
 function #{moduleName}_mail_alter(&\\$message) { 
   ${1}
 }"
@@ -3481,8 +3481,8 @@ function #{moduleName}_mail_alter(&\\$message) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_module_implements_alter().
-*/
+ * Implements hook_module_implements_alter().
+ */
 function #{moduleName}_module_implements_alter(&\\$implementations, \\$hook) { 
   ${1}
 }"
@@ -3495,8 +3495,8 @@ function #{moduleName}_module_implements_alter(&\\$implementations, \\$hook) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_system_info_alter().
-*/
+ * Implements hook_system_info_alter().
+ */
 function #{moduleName}_system_info_alter(&\\$info, \\$file, \\$type) { 
   ${1}
 }"
@@ -3509,8 +3509,8 @@ function #{moduleName}_system_info_alter(&\\$info, \\$file, \\$type) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_permission().
-*/
+ * Implements hook_permission().
+ */
 function #{moduleName}_permission() { 
   ${1}
 }"
@@ -3523,8 +3523,8 @@ function #{moduleName}_permission() {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_theme().
-*/
+ * Implements hook_theme().
+ */
 function #{moduleName}_theme(\\$existing, \\$type, \\$theme, \\$path) { 
   ${1}
 }"
@@ -3537,8 +3537,8 @@ function #{moduleName}_theme(\\$existing, \\$type, \\$theme, \\$path) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_theme_registry_alter().
-*/
+ * Implements hook_theme_registry_alter().
+ */
 function #{moduleName}_theme_registry_alter(&\\$theme_registry) { 
   ${1}
 }"
@@ -3551,8 +3551,8 @@ function #{moduleName}_theme_registry_alter(&\\$theme_registry) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_custom_theme().
-*/
+ * Implements hook_custom_theme().
+ */
 function #{moduleName}_custom_theme() { 
   ${1}
 }"
@@ -3565,8 +3565,8 @@ function #{moduleName}_custom_theme() {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_xmlrpc().
-*/
+ * Implements hook_xmlrpc().
+ */
 function #{moduleName}_xmlrpc() { 
   ${1}
 }"
@@ -3579,8 +3579,8 @@ function #{moduleName}_xmlrpc() {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_xmlrpc_alter().
-*/
+ * Implements hook_xmlrpc_alter().
+ */
 function #{moduleName}_xmlrpc_alter(&\\$methods) { 
   ${1}
 }"
@@ -3593,8 +3593,8 @@ function #{moduleName}_xmlrpc_alter(&\\$methods) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_watchdog().
-*/
+ * Implements hook_watchdog().
+ */
 function #{moduleName}_watchdog(array \\$log_entry) { 
   ${1}
 }"
@@ -3607,8 +3607,8 @@ function #{moduleName}_watchdog(array \\$log_entry) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_mail().
-*/
+ * Implements hook_mail().
+ */
 function #{moduleName}_mail(\\$key, &\\$message, \\$params) { 
   ${1}
 }"
@@ -3621,8 +3621,8 @@ function #{moduleName}_mail(\\$key, &\\$message, \\$params) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_flush_caches().
-*/
+ * Implements hook_flush_caches().
+ */
 function #{moduleName}_flush_caches() { 
   ${1}
 }"
@@ -3635,8 +3635,8 @@ function #{moduleName}_flush_caches() {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_modules_installed().
-*/
+ * Implements hook_modules_installed().
+ */
 function #{moduleName}_modules_installed(\\$modules) { 
   ${1}
 }"
@@ -3649,8 +3649,8 @@ function #{moduleName}_modules_installed(\\$modules) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_modules_enabled().
-*/
+ * Implements hook_modules_enabled().
+ */
 function #{moduleName}_modules_enabled(\\$modules) { 
   ${1}
 }"
@@ -3663,8 +3663,8 @@ function #{moduleName}_modules_enabled(\\$modules) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_modules_disabled().
-*/
+ * Implements hook_modules_disabled().
+ */
 function #{moduleName}_modules_disabled(\\$modules) { 
   ${1}
 }"
@@ -3677,8 +3677,8 @@ function #{moduleName}_modules_disabled(\\$modules) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_modules_uninstalled().
-*/
+ * Implements hook_modules_uninstalled().
+ */
 function #{moduleName}_modules_uninstalled(\\$modules) { 
   ${1}
 }"
@@ -3691,8 +3691,8 @@ function #{moduleName}_modules_uninstalled(\\$modules) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_stream_wrappers().
-*/
+ * Implements hook_stream_wrappers().
+ */
 function #{moduleName}_stream_wrappers() { 
   ${1}
 }"
@@ -3705,8 +3705,8 @@ function #{moduleName}_stream_wrappers() {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_stream_wrappers_alter().
-*/
+ * Implements hook_stream_wrappers_alter().
+ */
 function #{moduleName}_stream_wrappers_alter(&\\$wrappers) { 
   ${1}
 }"
@@ -3719,8 +3719,8 @@ function #{moduleName}_stream_wrappers_alter(&\\$wrappers) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_file_load().
-*/
+ * Implements hook_file_load().
+ */
 function #{moduleName}_file_load(\\$files) { 
   ${1}
 }"
@@ -3733,8 +3733,8 @@ function #{moduleName}_file_load(\\$files) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_file_validate().
-*/
+ * Implements hook_file_validate().
+ */
 function #{moduleName}_file_validate(&\\$file) { 
   ${1}
 }"
@@ -3747,8 +3747,8 @@ function #{moduleName}_file_validate(&\\$file) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_file_presave().
-*/
+ * Implements hook_file_presave().
+ */
 function #{moduleName}_file_presave(\\$file) { 
   ${1}
 }"
@@ -3761,8 +3761,8 @@ function #{moduleName}_file_presave(\\$file) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_file_insert().
-*/
+ * Implements hook_file_insert().
+ */
 function #{moduleName}_file_insert(\\$file) { 
   ${1}
 }"
@@ -3775,8 +3775,8 @@ function #{moduleName}_file_insert(\\$file) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_file_update().
-*/
+ * Implements hook_file_update().
+ */
 function #{moduleName}_file_update(\\$file) { 
   ${1}
 }"
@@ -3789,8 +3789,8 @@ function #{moduleName}_file_update(\\$file) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_file_copy().
-*/
+ * Implements hook_file_copy().
+ */
 function #{moduleName}_file_copy(\\$file, \\$source) { 
   ${1}
 }"
@@ -3803,8 +3803,8 @@ function #{moduleName}_file_copy(\\$file, \\$source) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_file_move().
-*/
+ * Implements hook_file_move().
+ */
 function #{moduleName}_file_move(\\$file, \\$source) { 
   ${1}
 }"
@@ -3817,8 +3817,8 @@ function #{moduleName}_file_move(\\$file, \\$source) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_file_delete().
-*/
+ * Implements hook_file_delete().
+ */
 function #{moduleName}_file_delete(\\$file) { 
   ${1}
 }"
@@ -3831,8 +3831,8 @@ function #{moduleName}_file_delete(\\$file) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_file_download().
-*/
+ * Implements hook_file_download().
+ */
 function #{moduleName}_file_download(\\$uri) { 
   ${1}
 }"
@@ -3845,8 +3845,8 @@ function #{moduleName}_file_download(\\$uri) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_file_url_alter().
-*/
+ * Implements hook_file_url_alter().
+ */
 function #{moduleName}_file_url_alter(&\\$uri) { 
   ${1}
 }"
@@ -3859,8 +3859,8 @@ function #{moduleName}_file_url_alter(&\\$uri) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_requirements().
-*/
+ * Implements hook_requirements().
+ */
 function #{moduleName}_requirements(\\$phase) { 
   ${1}
 }"
@@ -3873,8 +3873,8 @@ function #{moduleName}_requirements(\\$phase) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_schema().
-*/
+ * Implements hook_schema().
+ */
 function #{moduleName}_schema() { 
   ${1}
 }"
@@ -3887,8 +3887,8 @@ function #{moduleName}_schema() {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_schema_alter().
-*/
+ * Implements hook_schema_alter().
+ */
 function #{moduleName}_schema_alter(&\\$schema) { 
   ${1}
 }"
@@ -3901,8 +3901,8 @@ function #{moduleName}_schema_alter(&\\$schema) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_query_alter().
-*/
+ * Implements hook_query_alter().
+ */
 function #{moduleName}_query_alter(QueryAlterableInterface \\$query) { 
   ${1}
 }"
@@ -3915,8 +3915,8 @@ function #{moduleName}_query_alter(QueryAlterableInterface \\$query) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_query_TAG_alter().
-*/
+ * Implements hook_query_TAG_alter().
+ */
 function #{moduleName}_query_TAG_alter(QueryAlterableInterface \\$query) { 
   ${1}
 }"
@@ -3929,8 +3929,8 @@ function #{moduleName}_query_TAG_alter(QueryAlterableInterface \\$query) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_install().
-*/
+ * Implements hook_install().
+ */
 function #{moduleName}_install() { 
   ${1}
 }"
@@ -3943,8 +3943,8 @@ function #{moduleName}_install() {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_update_N().
-*/
+ * Implements hook_update_N().
+ */
 function #{moduleName}_update_N(&\\$sandbox) { 
   ${1}
 }"
@@ -3957,8 +3957,8 @@ function #{moduleName}_update_N(&\\$sandbox) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_update_dependencies().
-*/
+ * Implements hook_update_dependencies().
+ */
 function #{moduleName}_update_dependencies() { 
   ${1}
 }"
@@ -3971,8 +3971,8 @@ function #{moduleName}_update_dependencies() {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_update_last_removed().
-*/
+ * Implements hook_update_last_removed().
+ */
 function #{moduleName}_update_last_removed() { 
   ${1}
 }"
@@ -3985,8 +3985,8 @@ function #{moduleName}_update_last_removed() {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_uninstall().
-*/
+ * Implements hook_uninstall().
+ */
 function #{moduleName}_uninstall() { 
   ${1}
 }"
@@ -3999,8 +3999,8 @@ function #{moduleName}_uninstall() {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_enable().
-*/
+ * Implements hook_enable().
+ */
 function #{moduleName}_enable() { 
   ${1}
 }"
@@ -4013,8 +4013,8 @@ function #{moduleName}_enable() {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_disable().
-*/
+ * Implements hook_disable().
+ */
 function #{moduleName}_disable() { 
   ${1}
 }"
@@ -4027,8 +4027,8 @@ function #{moduleName}_disable() {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_registry_files_alter().
-*/
+ * Implements hook_registry_files_alter().
+ */
 function #{moduleName}_registry_files_alter(&\\$files, \\$modules) { 
   ${1}
 }"
@@ -4041,8 +4041,8 @@ function #{moduleName}_registry_files_alter(&\\$files, \\$modules) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_install_tasks().
-*/
+ * Implements hook_install_tasks().
+ */
 function #{moduleName}_install_tasks() { 
   ${1}
 }"
@@ -4055,8 +4055,8 @@ function #{moduleName}_install_tasks() {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_drupal_goto_alter().
-*/
+ * Implements hook_drupal_goto_alter().
+ */
 function #{moduleName}_drupal_goto_alter(&\\$path, &\\$options, &\\$http_response_code) { 
   ${1}
 }"
@@ -4069,8 +4069,8 @@ function #{moduleName}_drupal_goto_alter(&\\$path, &\\$options, &\\$http_respons
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_html_head_alter().
-*/
+ * Implements hook_html_head_alter().
+ */
 function #{moduleName}_html_head_alter(&\\$head_elements) { 
   ${1}
 }"
@@ -4083,8 +4083,8 @@ function #{moduleName}_html_head_alter(&\\$head_elements) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_install_tasks_alter().
-*/
+ * Implements hook_install_tasks_alter().
+ */
 function #{moduleName}_install_tasks_alter(&\\$tasks, \\$install_state) { 
   ${1}
 }"
@@ -4097,8 +4097,8 @@ function #{moduleName}_install_tasks_alter(&\\$tasks, \\$install_state) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_file_mimetype_mapping_alter().
-*/
+ * Implements hook_file_mimetype_mapping_alter().
+ */
 function #{moduleName}_file_mimetype_mapping_alter(&\\$mapping) { 
   ${1}
 }"
@@ -4111,8 +4111,8 @@ function #{moduleName}_file_mimetype_mapping_alter(&\\$mapping) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_action_info().
-*/
+ * Implements hook_action_info().
+ */
 function #{moduleName}_action_info() { 
   ${1}
 }"
@@ -4125,8 +4125,8 @@ function #{moduleName}_action_info() {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_actions_delete().
-*/
+ * Implements hook_actions_delete().
+ */
 function #{moduleName}_actions_delete(\\$aid) { 
   ${1}
 }"
@@ -4139,8 +4139,8 @@ function #{moduleName}_actions_delete(\\$aid) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_action_info_alter().
-*/
+ * Implements hook_action_info_alter().
+ */
 function #{moduleName}_action_info_alter(&\\$actions) { 
   ${1}
 }"
@@ -4153,8 +4153,8 @@ function #{moduleName}_action_info_alter(&\\$actions) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_archiver_info().
-*/
+ * Implements hook_archiver_info().
+ */
 function #{moduleName}_archiver_info() { 
   ${1}
 }"
@@ -4167,8 +4167,8 @@ function #{moduleName}_archiver_info() {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_archiver_info_alter().
-*/
+ * Implements hook_archiver_info_alter().
+ */
 function #{moduleName}_archiver_info_alter(&\\$info) { 
   ${1}
 }"
@@ -4181,8 +4181,8 @@ function #{moduleName}_archiver_info_alter(&\\$info) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_date_format_types().
-*/
+ * Implements hook_date_format_types().
+ */
 function #{moduleName}_date_format_types() { 
   ${1}
 }"
@@ -4195,8 +4195,8 @@ function #{moduleName}_date_format_types() {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_date_format_types_alter().
-*/
+ * Implements hook_date_format_types_alter().
+ */
 function #{moduleName}_date_format_types_alter(&\\$types) { 
   ${1}
 }"
@@ -4209,8 +4209,8 @@ function #{moduleName}_date_format_types_alter(&\\$types) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_date_formats().
-*/
+ * Implements hook_date_formats().
+ */
 function #{moduleName}_date_formats() { 
   ${1}
 }"
@@ -4223,8 +4223,8 @@ function #{moduleName}_date_formats() {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_date_formats_alter().
-*/
+ * Implements hook_date_formats_alter().
+ */
 function #{moduleName}_date_formats_alter(&\\$formats) { 
   ${1}
 }"
@@ -4237,8 +4237,8 @@ function #{moduleName}_date_formats_alter(&\\$formats) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_page_delivery_callback_alter().
-*/
+ * Implements hook_page_delivery_callback_alter().
+ */
 function #{moduleName}_page_delivery_callback_alter(&\\$callback) { 
   ${1}
 }"
@@ -4251,8 +4251,8 @@ function #{moduleName}_page_delivery_callback_alter(&\\$callback) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_system_themes_page_alter().
-*/
+ * Implements hook_system_themes_page_alter().
+ */
 function #{moduleName}_system_themes_page_alter(&\\$theme_groups) { 
   ${1}
 }"
@@ -4265,8 +4265,8 @@ function #{moduleName}_system_themes_page_alter(&\\$theme_groups) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_url_inbound_alter().
-*/
+ * Implements hook_url_inbound_alter().
+ */
 function #{moduleName}_url_inbound_alter(&\\$path, \\$original_path, \\$path_language) { 
   ${1}
 }"
@@ -4279,8 +4279,8 @@ function #{moduleName}_url_inbound_alter(&\\$path, \\$original_path, \\$path_lan
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_url_outbound_alter().
-*/
+ * Implements hook_url_outbound_alter().
+ */
 function #{moduleName}_url_outbound_alter(&\\$path, &\\$options, \\$original_path) { 
   ${1}
 }"
@@ -4293,8 +4293,8 @@ function #{moduleName}_url_outbound_alter(&\\$path, &\\$options, \\$original_pat
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_username_alter().
-*/
+ * Implements hook_username_alter().
+ */
 function #{moduleName}_username_alter(&\\$name, \\$account) { 
   ${1}
 }"
@@ -4307,8 +4307,8 @@ function #{moduleName}_username_alter(&\\$name, \\$account) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_tokens().
-*/
+ * Implements hook_tokens().
+ */
 function #{moduleName}_tokens(\\$type, \\$tokens, array \\$data = array(), array \\$options = array()) { 
   ${1}
 }"
@@ -4321,8 +4321,8 @@ function #{moduleName}_tokens(\\$type, \\$tokens, array \\$data = array(), array
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_tokens_alter().
-*/
+ * Implements hook_tokens_alter().
+ */
 function #{moduleName}_tokens_alter(array &\\$replacements, array \\$context) { 
   ${1}
 }"
@@ -4335,8 +4335,8 @@ function #{moduleName}_tokens_alter(array &\\$replacements, array \\$context) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_token_info().
-*/
+ * Implements hook_token_info().
+ */
 function #{moduleName}_token_info() { 
   ${1}
 }"
@@ -4349,8 +4349,8 @@ function #{moduleName}_token_info() {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_token_info_alter().
-*/
+ * Implements hook_token_info_alter().
+ */
 function #{moduleName}_token_info_alter(&\\$data) { 
   ${1}
 }"
@@ -4363,8 +4363,8 @@ function #{moduleName}_token_info_alter(&\\$data) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_batch_alter().
-*/
+ * Implements hook_batch_alter().
+ */
 function #{moduleName}_batch_alter(&\\$batch) { 
   ${1}
 }"
@@ -4377,8 +4377,8 @@ function #{moduleName}_batch_alter(&\\$batch) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_updater_info().
-*/
+ * Implements hook_updater_info().
+ */
 function #{moduleName}_updater_info() { 
   ${1}
 }"
@@ -4391,8 +4391,8 @@ function #{moduleName}_updater_info() {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_updater_info_alter().
-*/
+ * Implements hook_updater_info_alter().
+ */
 function #{moduleName}_updater_info_alter(&\\$updaters) { 
   ${1}
 }"
@@ -4405,8 +4405,8 @@ function #{moduleName}_updater_info_alter(&\\$updaters) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_countries_alter().
-*/
+ * Implements hook_countries_alter().
+ */
 function #{moduleName}_countries_alter(&\\$countries) { 
   ${1}
 }"
@@ -4419,8 +4419,8 @@ function #{moduleName}_countries_alter(&\\$countries) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_menu_site_status_alter().
-*/
+ * Implements hook_menu_site_status_alter().
+ */
 function #{moduleName}_menu_site_status_alter(&\\$menu_site_status, \\$path) { 
   ${1}
 }"
@@ -4433,8 +4433,8 @@ function #{moduleName}_menu_site_status_alter(&\\$menu_site_status, \\$path) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_filetransfer_info().
-*/
+ * Implements hook_filetransfer_info().
+ */
 function #{moduleName}_filetransfer_info() { 
   ${1}
 }"
@@ -4447,8 +4447,8 @@ function #{moduleName}_filetransfer_info() {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_filetransfer_info_alter().
-*/
+ * Implements hook_filetransfer_info_alter().
+ */
 function #{moduleName}_filetransfer_info_alter(&\\$filetransfer_info) { 
   ${1}
 }"
@@ -4461,8 +4461,8 @@ function #{moduleName}_filetransfer_info_alter(&\\$filetransfer_info) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_taxonomy_vocabulary_load().
-*/
+ * Implements hook_taxonomy_vocabulary_load().
+ */
 function #{moduleName}_taxonomy_vocabulary_load(\\$vocabularies) { 
   ${1}
 }"
@@ -4475,8 +4475,8 @@ function #{moduleName}_taxonomy_vocabulary_load(\\$vocabularies) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_taxonomy_vocabulary_presave().
-*/
+ * Implements hook_taxonomy_vocabulary_presave().
+ */
 function #{moduleName}_taxonomy_vocabulary_presave(\\$vocabulary) { 
   ${1}
 }"
@@ -4489,8 +4489,8 @@ function #{moduleName}_taxonomy_vocabulary_presave(\\$vocabulary) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_taxonomy_vocabulary_insert().
-*/
+ * Implements hook_taxonomy_vocabulary_insert().
+ */
 function #{moduleName}_taxonomy_vocabulary_insert(\\$vocabulary) { 
   ${1}
 }"
@@ -4503,8 +4503,8 @@ function #{moduleName}_taxonomy_vocabulary_insert(\\$vocabulary) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_taxonomy_vocabulary_update().
-*/
+ * Implements hook_taxonomy_vocabulary_update().
+ */
 function #{moduleName}_taxonomy_vocabulary_update(\\$vocabulary) { 
   ${1}
 }"
@@ -4517,8 +4517,8 @@ function #{moduleName}_taxonomy_vocabulary_update(\\$vocabulary) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_taxonomy_vocabulary_delete().
-*/
+ * Implements hook_taxonomy_vocabulary_delete().
+ */
 function #{moduleName}_taxonomy_vocabulary_delete(\\$vocabulary) { 
   ${1}
 }"
@@ -4531,8 +4531,8 @@ function #{moduleName}_taxonomy_vocabulary_delete(\\$vocabulary) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_taxonomy_term_load().
-*/
+ * Implements hook_taxonomy_term_load().
+ */
 function #{moduleName}_taxonomy_term_load(\\$terms) { 
   ${1}
 }"
@@ -4545,8 +4545,8 @@ function #{moduleName}_taxonomy_term_load(\\$terms) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_taxonomy_term_presave().
-*/
+ * Implements hook_taxonomy_term_presave().
+ */
 function #{moduleName}_taxonomy_term_presave(\\$term) { 
   ${1}
 }"
@@ -4559,8 +4559,8 @@ function #{moduleName}_taxonomy_term_presave(\\$term) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_taxonomy_term_insert().
-*/
+ * Implements hook_taxonomy_term_insert().
+ */
 function #{moduleName}_taxonomy_term_insert(\\$term) { 
   ${1}
 }"
@@ -4573,8 +4573,8 @@ function #{moduleName}_taxonomy_term_insert(\\$term) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_taxonomy_term_update().
-*/
+ * Implements hook_taxonomy_term_update().
+ */
 function #{moduleName}_taxonomy_term_update(\\$term) { 
   ${1}
 }"
@@ -4587,8 +4587,8 @@ function #{moduleName}_taxonomy_term_update(\\$term) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_taxonomy_term_delete().
-*/
+ * Implements hook_taxonomy_term_delete().
+ */
 function #{moduleName}_taxonomy_term_delete(\\$term) { 
   ${1}
 }"
@@ -4601,8 +4601,8 @@ function #{moduleName}_taxonomy_term_delete(\\$term) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_taxonomy_term_view_alter().
-*/
+ * Implements hook_taxonomy_term_view_alter().
+ */
 function #{moduleName}_taxonomy_term_view_alter(&\\$build) { 
   ${1}
 }"
@@ -4615,8 +4615,8 @@ function #{moduleName}_taxonomy_term_view_alter(&\\$build) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_trigger_info().
-*/
+ * Implements hook_trigger_info().
+ */
 function #{moduleName}_trigger_info() { 
   ${1}
 }"
@@ -4629,8 +4629,8 @@ function #{moduleName}_trigger_info() {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_trigger_info_alter().
-*/
+ * Implements hook_trigger_info_alter().
+ */
 function #{moduleName}_trigger_info_alter(&\\$triggers) { 
   ${1}
 }"
@@ -4643,8 +4643,8 @@ function #{moduleName}_trigger_info_alter(&\\$triggers) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_update_projects_alter().
-*/
+ * Implements hook_update_projects_alter().
+ */
 function #{moduleName}_update_projects_alter(&\\$projects) { 
   ${1}
 }"
@@ -4657,8 +4657,8 @@ function #{moduleName}_update_projects_alter(&\\$projects) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_update_status_alter().
-*/
+ * Implements hook_update_status_alter().
+ */
 function #{moduleName}_update_status_alter(&\\$projects) { 
   ${1}
 }"
@@ -4671,8 +4671,8 @@ function #{moduleName}_update_status_alter(&\\$projects) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_verify_update_archive().
-*/
+ * Implements hook_verify_update_archive().
+ */
 function #{moduleName}_verify_update_archive(\\$project, \\$archive_file, \\$directory) { 
   ${1}
 }"
@@ -4685,8 +4685,8 @@ function #{moduleName}_verify_update_archive(\\$project, \\$archive_file, \\$dir
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_user_load().
-*/
+ * Implements hook_user_load().
+ */
 function #{moduleName}_user_load(\\$users) { 
   ${1}
 }"
@@ -4699,8 +4699,8 @@ function #{moduleName}_user_load(\\$users) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_user_delete().
-*/
+ * Implements hook_user_delete().
+ */
 function #{moduleName}_user_delete(\\$account) { 
   ${1}
 }"
@@ -4713,8 +4713,8 @@ function #{moduleName}_user_delete(\\$account) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_user_cancel().
-*/
+ * Implements hook_user_cancel().
+ */
 function #{moduleName}_user_cancel(\\$edit, \\$account, \\$method) { 
   ${1}
 }"
@@ -4727,8 +4727,8 @@ function #{moduleName}_user_cancel(\\$edit, \\$account, \\$method) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_user_cancel_methods_alter().
-*/
+ * Implements hook_user_cancel_methods_alter().
+ */
 function #{moduleName}_user_cancel_methods_alter(&\\$methods) { 
   ${1}
 }"
@@ -4741,8 +4741,8 @@ function #{moduleName}_user_cancel_methods_alter(&\\$methods) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_user_operations().
-*/
+ * Implements hook_user_operations().
+ */
 function #{moduleName}_user_operations() { 
   ${1}
 }"
@@ -4755,8 +4755,8 @@ function #{moduleName}_user_operations() {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_user_categories().
-*/
+ * Implements hook_user_categories().
+ */
 function #{moduleName}_user_categories() { 
   ${1}
 }"
@@ -4769,8 +4769,8 @@ function #{moduleName}_user_categories() {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_user_presave().
-*/
+ * Implements hook_user_presave().
+ */
 function #{moduleName}_user_presave(&\\$edit, \\$account, \\$category) { 
   ${1}
 }"
@@ -4783,8 +4783,8 @@ function #{moduleName}_user_presave(&\\$edit, \\$account, \\$category) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_user_insert().
-*/
+ * Implements hook_user_insert().
+ */
 function #{moduleName}_user_insert(&\\$edit, \\$account, \\$category) { 
   ${1}
 }"
@@ -4797,8 +4797,8 @@ function #{moduleName}_user_insert(&\\$edit, \\$account, \\$category) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_user_update().
-*/
+ * Implements hook_user_update().
+ */
 function #{moduleName}_user_update(&\\$edit, \\$account, \\$category) { 
   ${1}
 }"
@@ -4811,8 +4811,8 @@ function #{moduleName}_user_update(&\\$edit, \\$account, \\$category) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_user_login().
-*/
+ * Implements hook_user_login().
+ */
 function #{moduleName}_user_login(&\\$edit, \\$account) { 
   ${1}
 }"
@@ -4825,8 +4825,8 @@ function #{moduleName}_user_login(&\\$edit, \\$account) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_user_logout().
-*/
+ * Implements hook_user_logout().
+ */
 function #{moduleName}_user_logout(\\$account) { 
   ${1}
 }"
@@ -4839,8 +4839,8 @@ function #{moduleName}_user_logout(\\$account) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_user_view().
-*/
+ * Implements hook_user_view().
+ */
 function #{moduleName}_user_view(\\$account, \\$view_mode, \\$langcode) { 
   ${1}
 }"
@@ -4853,8 +4853,8 @@ function #{moduleName}_user_view(\\$account, \\$view_mode, \\$langcode) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_user_view_alter().
-*/
+ * Implements hook_user_view_alter().
+ */
 function #{moduleName}_user_view_alter(&\\$build) { 
   ${1}
 }"
@@ -4867,8 +4867,8 @@ function #{moduleName}_user_view_alter(&\\$build) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_user_role_insert().
-*/
+ * Implements hook_user_role_insert().
+ */
 function #{moduleName}_user_role_insert(\\$role) { 
   ${1}
 }"
@@ -4881,8 +4881,8 @@ function #{moduleName}_user_role_insert(\\$role) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_user_role_update().
-*/
+ * Implements hook_user_role_update().
+ */
 function #{moduleName}_user_role_update(\\$role) { 
   ${1}
 }"
@@ -4895,8 +4895,8 @@ function #{moduleName}_user_role_update(\\$role) {
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
      "
 /**
-* Implements hook_user_role_delete().
-*/
+ * Implements hook_user_role_delete().
+ */
 function #{moduleName}_user_role_delete(\\$role) { 
   ${1}
 }"
@@ -4915,8 +4915,8 @@ command 'hook_CUSTOM' do |cmd|
     func = moduleName + '_' + hook
      "
 /**
-* Implements hook_#{hook}().
-*/
+ * Implements hook_#{hook}().
+ */
 function #{func}() { 
   ${1}
 }"
