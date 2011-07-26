@@ -1,5 +1,12 @@
 <?php
 /**
  * @file
- *   File description goes here
+ *   Core and Contrib Hooks, and required functions for module
  */
+
+/**
+ * Implements hook_help().
+ */
+function ${TM_NEW_FILE_BASENAME}_help($path, $arg) { 
+  
+}
