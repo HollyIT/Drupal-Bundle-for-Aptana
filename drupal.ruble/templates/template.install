@@ -3,33 +3,4 @@
  * @file
  *   Install, Uninstall, Schema, and Update functionality
  */
-
-/**
- * Implements hook_install().
- */
-function ${TM_NEW_FILE_BASENAME}_install() { 
-  
-}
-
-/**
- * Implements hook_uninstall().
- */
-function ${TM_NEW_FILE_BASENAME}_uninstall() { 
-  
-}
-
-/**
- * Implements hook_schema().
- */
-function ${TM_NEW_FILE_BASENAME}_schema() { 
-  $schema = array();
-  
-  return $schema;
-}
-
-/**
- * Implements hook_update_N().
- */
-function ${TM_NEW_FILE_BASENAME}_update_7100() { 
-  
-}
+${hooks}
