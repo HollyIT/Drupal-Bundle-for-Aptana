@@ -1,9 +1,0 @@
-This is a ruble for Aptana Studio 3. This ruble enables Drupal 7 Hooks inside of the command menu.
-
-INSTALL
-
-To install this ruble, copy the drupal.ruble folder and all it's contents to the
-$USER_DOCUMENT_DIRECTORY/Aptana Rubles/ directory. The $USER_DOCUMENT_DIRECTORY is platform independent.
-On Windows 7 you will find this directory under c:\users\{username}\Aptana Rubles\
-
-**NOTE: This project is in the very early phases of development. Any help on future features and enhancements is greatly appreciated. 
