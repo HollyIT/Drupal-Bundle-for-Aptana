@@ -5,7 +5,7 @@ A bundle to aid in the development of Drupal modules
 ## Authors
 
 * Initial - Jamie Holly/HollyIT
-* Current maintainer - Adam A. Gregory Newhallweb.com
+* Current maintainer - Adam A. Gregory [Newhall Interactive](http://newhallweb.com)
 
 
 ## License
