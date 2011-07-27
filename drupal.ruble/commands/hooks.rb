@@ -1,9 +1,9 @@
 require 'ruble'
+require 'functions.rb'
 
 with_defaults :scope => 'source.php', :input => :none, :output => :insert_as_snippet do |bundle|
   
    command 'hook_aggregator_fetch' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_aggregator_fetch'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -17,7 +17,6 @@ function #{moduleName}_aggregator_fetch(\\$feed) {
     end
   end
    command 'hook_aggregator_fetch_info' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_aggregator_fetch_info'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -31,7 +30,6 @@ function #{moduleName}_aggregator_fetch_info() {
     end
   end
    command 'hook_aggregator_parse' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_aggregator_parse'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -45,7 +43,6 @@ function #{moduleName}_aggregator_parse(\\$feed) {
     end
   end
    command 'hook_aggregator_parse_info' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_aggregator_parse_info'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -59,7 +56,6 @@ function #{moduleName}_aggregator_parse_info() {
     end
   end
    command 'hook_aggregator_process' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_aggregator_process'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -73,7 +69,6 @@ function #{moduleName}_aggregator_process(\\$feed) {
     end
   end
    command 'hook_aggregator_process_info' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_aggregator_process_info'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -87,7 +82,6 @@ function #{moduleName}_aggregator_process_info(\\$feed) {
     end
   end
    command 'hook_aggregator_remove' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_aggregator_remove'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -101,7 +95,6 @@ function #{moduleName}_aggregator_remove(\\$feed) {
     end
   end
    command 'hook_block_info' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_block_info'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -115,7 +108,6 @@ function #{moduleName}_block_info() {
     end
   end
    command 'hook_block_info_alter' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_block_info_alter'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -129,7 +121,6 @@ function #{moduleName}_block_info_alter(&\\$blocks, \\$theme, \\$code_blocks) {
     end
   end
    command 'hook_block_configure' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_block_configure'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -143,7 +134,6 @@ function #{moduleName}_block_configure(\\$delta = \'\') {
     end
   end
    command 'hook_block_save' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_block_save'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -157,7 +147,6 @@ function #{moduleName}_block_save(\\$delta = \'\', \\$edit = array()) {
     end
   end
    command 'hook_block_view' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_block_view'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -171,7 +160,6 @@ function #{moduleName}_block_view(\\$delta = \'\') {
     end
   end
    command 'hook_block_view_alter' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_block_view_alter'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -185,7 +173,6 @@ function #{moduleName}_block_view_alter(&\\$data, \\$block) {
     end
   end
    command 'hook_block_view_MODULE_DELTA_alter' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_block_view_MODULE_DELTA_alter'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -199,7 +186,6 @@ function #{moduleName}_block_view_MODULE_DELTA_alter(&\\$data, \\$block) {
     end
   end
    command 'hook_block_list_alter' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_block_list_alter'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -213,7 +199,6 @@ function #{moduleName}_block_list_alter(&\\$blocks) {
     end
   end
    command 'hook_comment_presave' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_comment_presave'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -227,7 +212,6 @@ function #{moduleName}_comment_presave(\\$comment) {
     end
   end
    command 'hook_comment_insert' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_comment_insert'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -241,7 +225,6 @@ function #{moduleName}_comment_insert(\\$comment) {
     end
   end
    command 'hook_comment_update' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_comment_update'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -255,7 +238,6 @@ function #{moduleName}_comment_update(\\$comment) {
     end
   end
    command 'hook_comment_load' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_comment_load'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -269,7 +251,6 @@ function #{moduleName}_comment_load(\\$comments) {
     end
   end
    command 'hook_comment_view' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_comment_view'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -283,7 +264,6 @@ function #{moduleName}_comment_view(\\$comment, \\$view_mode, \\$langcode) {
     end
   end
    command 'hook_comment_view_alter' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_comment_view_alter'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -297,7 +277,6 @@ function #{moduleName}_comment_view_alter(&\\$build) {
     end
   end
    command 'hook_comment_publish' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_comment_publish'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -311,7 +290,6 @@ function #{moduleName}_comment_publish(\\$comment) {
     end
   end
    command 'hook_comment_unpublish' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_comment_unpublish'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -325,7 +303,6 @@ function #{moduleName}_comment_unpublish(\\$comment) {
     end
   end
    command 'hook_comment_delete' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_comment_delete'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -339,7 +316,6 @@ function #{moduleName}_comment_delete(\\$comment) {
     end
   end
    command 'hook_contextual_links_view_alter' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_contextual_links_view_alter'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -353,7 +329,6 @@ function #{moduleName}_contextual_links_view_alter(&\\$element, \\$items) {
     end
   end
    command 'hook_dashboard_regions' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_dashboard_regions'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -367,7 +342,6 @@ function #{moduleName}_dashboard_regions() {
     end
   end
    command 'hook_dashboard_regions_alter' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_dashboard_regions_alter'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -381,7 +355,6 @@ function #{moduleName}_dashboard_regions_alter(\\$regions) {
     end
   end
    command 'hook_field_extra_fields' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_field_extra_fields'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -395,7 +368,6 @@ function #{moduleName}_field_extra_fields() {
     end
   end
    command 'hook_field_extra_fields_alter' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_field_extra_fields_alter'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -409,7 +381,6 @@ function #{moduleName}_field_extra_fields_alter(&\\$info) {
     end
   end
    command 'hook_field_info' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_field_info'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -423,7 +394,6 @@ function #{moduleName}_field_info() {
     end
   end
    command 'hook_field_info_alter' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_field_info_alter'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -437,7 +407,6 @@ function #{moduleName}_field_info_alter(&\\$info) {
     end
   end
    command 'hook_field_schema' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_field_schema'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -451,7 +420,6 @@ function #{moduleName}_field_schema(\\$field) {
     end
   end
    command 'hook_field_load' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_field_load'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -465,7 +433,6 @@ function #{moduleName}_field_load(\\$entity_type, \\$entities, \\$field, \\$inst
     end
   end
    command 'hook_field_prepare_view' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_field_prepare_view'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -479,7 +446,6 @@ function #{moduleName}_field_prepare_view(\\$entity_type, \\$entities, \\$field,
     end
   end
    command 'hook_field_validate' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_field_validate'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -493,7 +459,6 @@ function #{moduleName}_field_validate(\\$entity_type, \\$entity, \\$field, \\$in
     end
   end
    command 'hook_field_presave' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_field_presave'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -507,7 +472,6 @@ function #{moduleName}_field_presave(\\$entity_type, \\$entity, \\$field, \\$ins
     end
   end
    command 'hook_field_insert' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_field_insert'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -521,7 +485,6 @@ function #{moduleName}_field_insert(\\$entity_type, \\$entity, \\$field, \\$inst
     end
   end
    command 'hook_field_update' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_field_update'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -535,7 +498,6 @@ function #{moduleName}_field_update(\\$entity_type, \\$entity, \\$field, \\$inst
     end
   end
    command 'hook_field_storage_update_field' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_field_storage_update_field'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -549,7 +511,6 @@ function #{moduleName}_field_storage_update_field(\\$field, \\$prior_field, \\$h
     end
   end
    command 'hook_field_delete' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_field_delete'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -563,7 +524,6 @@ function #{moduleName}_field_delete(\\$entity_type, \\$entity, \\$field, \\$inst
     end
   end
    command 'hook_field_delete_revision' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_field_delete_revision'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -577,7 +537,6 @@ function #{moduleName}_field_delete_revision(\\$entity_type, \\$entity, \\$field
     end
   end
    command 'hook_field_prepare_translation' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_field_prepare_translation'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -591,7 +550,6 @@ function #{moduleName}_field_prepare_translation(\\$entity_type, \\$entity, \\$f
     end
   end
    command 'hook_field_is_empty' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_field_is_empty'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -605,7 +563,6 @@ function #{moduleName}_field_is_empty(\\$item, \\$field) {
     end
   end
    command 'hook_field_widget_info' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_field_widget_info'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -619,7 +576,6 @@ function #{moduleName}_field_widget_info() {
     end
   end
    command 'hook_field_widget_info_alter' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_field_widget_info_alter'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -633,7 +589,6 @@ function #{moduleName}_field_widget_info_alter(&\\$info) {
     end
   end
    command 'hook_field_widget_form' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_field_widget_form'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -647,7 +602,6 @@ function #{moduleName}_field_widget_form(&\\$form, &\\$form_state, \\$field, \\$
     end
   end
    command 'hook_field_widget_error' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_field_widget_error'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -661,7 +615,6 @@ function #{moduleName}_field_widget_error(\\$element, \\$error, \\$form, &\\$for
     end
   end
    command 'hook_field_formatter_info' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_field_formatter_info'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -675,7 +628,6 @@ function #{moduleName}_field_formatter_info() {
     end
   end
    command 'hook_field_formatter_info_alter' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_field_formatter_info_alter'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -689,7 +641,6 @@ function #{moduleName}_field_formatter_info_alter(&\\$info) {
     end
   end
    command 'hook_field_formatter_prepare_view' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_field_formatter_prepare_view'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -703,7 +654,6 @@ function #{moduleName}_field_formatter_prepare_view(\\$entity_type, \\$entities,
     end
   end
    command 'hook_field_formatter_view' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_field_formatter_view'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -717,7 +667,6 @@ function #{moduleName}_field_formatter_view(\\$entity_type, \\$entity, \\$field,
     end
   end
    command 'hook_field_attach_form' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_field_attach_form'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -731,7 +680,6 @@ function #{moduleName}_field_attach_form(\\$entity_type, \\$entity, &\\$form, &\
     end
   end
    command 'hook_field_attach_load' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_field_attach_load'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -745,7 +693,6 @@ function #{moduleName}_field_attach_load(\\$entity_type, &\\$entities, \\$age, \
     end
   end
    command 'hook_field_attach_validate' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_field_attach_validate'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -759,7 +706,6 @@ function #{moduleName}_field_attach_validate(\\$entity_type, \\$entity, &\\$erro
     end
   end
    command 'hook_field_attach_submit' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_field_attach_submit'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -773,7 +719,6 @@ function #{moduleName}_field_attach_submit(\\$entity_type, \\$entity, \\$form, &
     end
   end
    command 'hook_field_attach_presave' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_field_attach_presave'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -787,7 +732,6 @@ function #{moduleName}_field_attach_presave(\\$entity_type, \\$entity) {
     end
   end
    command 'hook_field_attach_insert' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_field_attach_insert'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -801,7 +745,6 @@ function #{moduleName}_field_attach_insert(\\$entity_type, \\$entity) {
     end
   end
    command 'hook_field_attach_update' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_field_attach_update'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -815,7 +758,6 @@ function #{moduleName}_field_attach_update(\\$entity_type, \\$entity) {
     end
   end
    command 'hook_field_attach_preprocess_alter' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_field_attach_preprocess_alter'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -829,7 +771,6 @@ function #{moduleName}_field_attach_preprocess_alter(&\\$variables, \\$context) 
     end
   end
    command 'hook_field_attach_delete' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_field_attach_delete'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -843,7 +784,6 @@ function #{moduleName}_field_attach_delete(\\$entity_type, \\$entity) {
     end
   end
    command 'hook_field_attach_delete_revision' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_field_attach_delete_revision'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -857,7 +797,6 @@ function #{moduleName}_field_attach_delete_revision(\\$entity_type, \\$entity) {
     end
   end
    command 'hook_field_attach_purge' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_field_attach_purge'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -871,7 +810,6 @@ function #{moduleName}_field_attach_purge(\\$entity_type, \\$entity, \\$field, \
     end
   end
    command 'hook_field_attach_view_alter' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_field_attach_view_alter'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -885,7 +823,6 @@ function #{moduleName}_field_attach_view_alter(&\\$output, \\$context) {
     end
   end
    command 'hook_field_attach_prepare_translation_alter' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_field_attach_prepare_translation_alter'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -899,7 +836,6 @@ function #{moduleName}_field_attach_prepare_translation_alter(&\\$entity, \\$con
     end
   end
    command 'hook_field_language_alter' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_field_language_alter'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -913,7 +849,6 @@ function #{moduleName}_field_language_alter(&\\$display_language, \\$context) {
     end
   end
    command 'hook_field_available_languages_alter' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_field_available_languages_alter'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -927,7 +862,6 @@ function #{moduleName}_field_available_languages_alter(&\\$languages, \\$context
     end
   end
    command 'hook_field_attach_create_bundle' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_field_attach_create_bundle'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -941,7 +875,6 @@ function #{moduleName}_field_attach_create_bundle(\\$entity_type, \\$bundle) {
     end
   end
    command 'hook_field_attach_rename_bundle' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_field_attach_rename_bundle'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -955,7 +888,6 @@ function #{moduleName}_field_attach_rename_bundle(\\$entity_type, \\$bundle_old,
     end
   end
    command 'hook_field_attach_delete_bundle' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_field_attach_delete_bundle'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -969,7 +901,6 @@ function #{moduleName}_field_attach_delete_bundle(\\$entity_type, \\$bundle, \\$
     end
   end
    command 'hook_field_storage_info' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_field_storage_info'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -983,7 +914,6 @@ function #{moduleName}_field_storage_info() {
     end
   end
    command 'hook_field_storage_info_alter' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_field_storage_info_alter'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -997,7 +927,6 @@ function #{moduleName}_field_storage_info_alter(&\\$info) {
     end
   end
    command 'hook_field_storage_details' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_field_storage_details'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -1011,7 +940,6 @@ function #{moduleName}_field_storage_details(\\$field) {
     end
   end
    command 'hook_field_storage_details_alter' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_field_storage_details_alter'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -1025,7 +953,6 @@ function #{moduleName}_field_storage_details_alter(&\\$details, \\$field) {
     end
   end
    command 'hook_field_storage_load' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_field_storage_load'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -1039,7 +966,6 @@ function #{moduleName}_field_storage_load(\\$entity_type, &\\$entities, \\$age, 
     end
   end
    command 'hook_field_storage_write' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_field_storage_write'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -1053,7 +979,6 @@ function #{moduleName}_field_storage_write(\\$entity_type, \\$entity, \\$op, \\$
     end
   end
    command 'hook_field_storage_delete' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_field_storage_delete'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -1067,7 +992,6 @@ function #{moduleName}_field_storage_delete(\\$entity_type, \\$entity, \\$fields
     end
   end
    command 'hook_field_storage_delete_revision' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_field_storage_delete_revision'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -1081,7 +1005,6 @@ function #{moduleName}_field_storage_delete_revision(\\$entity_type, \\$entity, 
     end
   end
    command 'hook_field_storage_query' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_field_storage_query'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -1095,7 +1018,6 @@ function #{moduleName}_field_storage_query(\\$query) {
     end
   end
    command 'hook_field_storage_create_field' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_field_storage_create_field'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -1109,7 +1031,6 @@ function #{moduleName}_field_storage_create_field(\\$field) {
     end
   end
    command 'hook_field_storage_delete_field' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_field_storage_delete_field'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -1123,7 +1044,6 @@ function #{moduleName}_field_storage_delete_field(\\$field) {
     end
   end
    command 'hook_field_storage_delete_instance' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_field_storage_delete_instance'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -1137,7 +1057,6 @@ function #{moduleName}_field_storage_delete_instance(\\$instance) {
     end
   end
    command 'hook_field_storage_pre_load' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_field_storage_pre_load'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -1151,7 +1070,6 @@ function #{moduleName}_field_storage_pre_load(\\$entity_type, \\$entities, \\$ag
     end
   end
    command 'hook_field_storage_pre_insert' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_field_storage_pre_insert'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -1165,7 +1083,6 @@ function #{moduleName}_field_storage_pre_insert(\\$entity_type, \\$entity, &\\$s
     end
   end
    command 'hook_field_storage_pre_update' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_field_storage_pre_update'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -1179,7 +1096,6 @@ function #{moduleName}_field_storage_pre_update(\\$entity_type, \\$entity, &\\$s
     end
   end
    command 'hook_field_info_max_weight' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_field_info_max_weight'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -1193,7 +1109,6 @@ function #{moduleName}_field_info_max_weight(\\$entity_type, \\$bundle, \\$conte
     end
   end
    command 'hook_field_display_alter' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_field_display_alter'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -1207,7 +1122,6 @@ function #{moduleName}_field_display_alter(&\\$display, \\$context) {
     end
   end
    command 'hook_field_display_ENTITY_TYPE_alter' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_field_display_ENTITY_TYPE_alter'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -1221,7 +1135,6 @@ function #{moduleName}_field_display_ENTITY_TYPE_alter(&\\$display, \\$context) 
     end
   end
    command 'hook_field_extra_fields_display_alter' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_field_extra_fields_display_alter'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -1235,7 +1148,6 @@ function #{moduleName}_field_extra_fields_display_alter(&\\$displays, \\$context
     end
   end
    command 'hook_field_widget_properties_alter' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_field_widget_properties_alter'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -1249,7 +1161,6 @@ function #{moduleName}_field_widget_properties_alter(&\\$widget, \\$context) {
     end
   end
    command 'hook_field_widget_properties_ENTITY_TYPE_alter' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_field_widget_properties_ENTITY_TYPE_alter'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -1263,7 +1174,6 @@ function #{moduleName}_field_widget_properties_ENTITY_TYPE_alter(&\\$widget, \\$
     end
   end
    command 'hook_field_create_field' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_field_create_field'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -1277,7 +1187,6 @@ function #{moduleName}_field_create_field(\\$field) {
     end
   end
    command 'hook_field_create_instance' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_field_create_instance'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -1291,7 +1200,6 @@ function #{moduleName}_field_create_instance(\\$instance) {
     end
   end
    command 'hook_field_update_forbid' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_field_update_forbid'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -1305,7 +1213,6 @@ function #{moduleName}_field_update_forbid(\\$field, \\$prior_field, \\$has_data
     end
   end
    command 'hook_field_update_field' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_field_update_field'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -1319,7 +1226,6 @@ function #{moduleName}_field_update_field(\\$field, \\$prior_field, \\$has_data)
     end
   end
    command 'hook_field_delete_field' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_field_delete_field'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -1333,7 +1239,6 @@ function #{moduleName}_field_delete_field(\\$field) {
     end
   end
    command 'hook_field_update_instance' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_field_update_instance'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -1347,7 +1252,6 @@ function #{moduleName}_field_update_instance(\\$instance, \\$prior_instance) {
     end
   end
    command 'hook_field_delete_instance' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_field_delete_instance'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -1361,7 +1265,6 @@ function #{moduleName}_field_delete_instance(\\$instance) {
     end
   end
    command 'hook_field_read_field' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_field_read_field'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -1375,7 +1278,6 @@ function #{moduleName}_field_read_field(&\\$field) {
     end
   end
    command 'hook_field_read_instance' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_field_read_instance'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -1389,7 +1291,6 @@ function #{moduleName}_field_read_instance(\\$instance) {
     end
   end
    command 'hook_field_purge_field' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_field_purge_field'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -1403,7 +1304,6 @@ function #{moduleName}_field_purge_field(\\$field) {
     end
   end
    command 'hook_field_purge_field_instance' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_field_purge_field_instance'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -1417,7 +1317,6 @@ function #{moduleName}_field_purge_field_instance(\\$instance) {
     end
   end
    command 'hook_field_storage_purge_field' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_field_storage_purge_field'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -1431,7 +1330,6 @@ function #{moduleName}_field_storage_purge_field(\\$field) {
     end
   end
    command 'hook_field_storage_purge_field_instance' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_field_storage_purge_field_instance'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -1445,7 +1343,6 @@ function #{moduleName}_field_storage_purge_field_instance(\\$instance) {
     end
   end
    command 'hook_field_storage_purge' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_field_storage_purge'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -1459,7 +1356,6 @@ function #{moduleName}_field_storage_purge(\\$entity_type, \\$entity, \\$field, 
     end
   end
    command 'hook_field_access' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_field_access'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -1473,7 +1369,6 @@ function #{moduleName}_field_access(\\$op, \\$field, \\$entity_type, \\$entity, 
     end
   end
    command 'hook_field_settings_form' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_field_settings_form'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -1487,7 +1382,6 @@ function #{moduleName}_field_settings_form(\\$field, \\$instance, \\$has_data) {
     end
   end
    command 'hook_field_instance_settings_form' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_field_instance_settings_form'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -1501,7 +1395,6 @@ function #{moduleName}_field_instance_settings_form(\\$field, \\$instance) {
     end
   end
    command 'hook_field_widget_settings_form' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_field_widget_settings_form'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -1515,7 +1408,6 @@ function #{moduleName}_field_widget_settings_form(\\$field, \\$instance) {
     end
   end
    command 'hook_field_formatter_settings_form' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_field_formatter_settings_form'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -1529,7 +1421,6 @@ function #{moduleName}_field_formatter_settings_form(\\$field, \\$instance, \\$v
     end
   end
    command 'hook_field_formatter_settings_summary' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_field_formatter_settings_summary'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -1543,7 +1434,6 @@ function #{moduleName}_field_formatter_settings_summary(\\$field, \\$instance, \
     end
   end
    command 'hook_file_download_access' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_file_download_access'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -1557,7 +1447,6 @@ function #{moduleName}_file_download_access(\\$field, \\$entity_type, \\$entity)
     end
   end
    command 'hook_file_download_access_alter' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_file_download_access_alter'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -1571,7 +1460,6 @@ function #{moduleName}_file_download_access_alter(&\\$grants, \\$field, \\$entit
     end
   end
    command 'hook_filter_info' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_filter_info'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -1585,7 +1473,6 @@ function #{moduleName}_filter_info() {
     end
   end
    command 'hook_filter_info_alter' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_filter_info_alter'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -1599,7 +1486,6 @@ function #{moduleName}_filter_info_alter(&\\$info) {
     end
   end
    command 'hook_filter_FILTER_settings' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_filter_FILTER_settings'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -1613,7 +1499,6 @@ function #{moduleName}_filter_FILTER_settings(\\$form, &\\$form_state, \\$filter
     end
   end
    command 'hook_filter_FILTER_prepare' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_filter_FILTER_prepare'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -1627,7 +1512,6 @@ function #{moduleName}_filter_FILTER_prepare(\\$text, \\$filter, \\$format, \\$l
     end
   end
    command 'hook_filter_FILTER_process' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_filter_FILTER_process'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -1641,7 +1525,6 @@ function #{moduleName}_filter_FILTER_process(\\$text, \\$filter, \\$format, \\$l
     end
   end
    command 'hook_filter_FILTER_tips' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_filter_FILTER_tips'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -1655,7 +1538,6 @@ function #{moduleName}_filter_FILTER_tips(\\$filter, \\$format, \\$long) {
     end
   end
    command 'hook_filter_format_insert' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_filter_format_insert'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -1669,7 +1551,6 @@ function #{moduleName}_filter_format_insert(\\$format) {
     end
   end
    command 'hook_filter_format_update' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_filter_format_update'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -1683,7 +1564,6 @@ function #{moduleName}_filter_format_update(\\$format) {
     end
   end
    command 'hook_filter_format_disable' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_filter_format_disable'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -1697,7 +1577,6 @@ function #{moduleName}_filter_format_disable(\\$format) {
     end
   end
    command 'hook_help' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_help'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -1711,7 +1590,6 @@ function #{moduleName}_help(\\$path, \\$arg) {
     end
   end
    command 'hook_image_effect_info' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_image_effect_info'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -1725,7 +1603,6 @@ function #{moduleName}_image_effect_info() {
     end
   end
    command 'hook_image_effect_info_alter' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_image_effect_info_alter'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -1739,7 +1616,6 @@ function #{moduleName}_image_effect_info_alter(&\\$effects) {
     end
   end
    command 'hook_image_style_save' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_image_style_save'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -1753,7 +1629,6 @@ function #{moduleName}_image_style_save(\\$style) {
     end
   end
    command 'hook_image_style_delete' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_image_style_delete'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -1767,7 +1642,6 @@ function #{moduleName}_image_style_delete(\\$style) {
     end
   end
    command 'hook_image_style_flush' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_image_style_flush'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -1781,7 +1655,6 @@ function #{moduleName}_image_style_flush(\\$style) {
     end
   end
    command 'hook_image_styles_alter' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_image_styles_alter'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -1795,7 +1668,6 @@ function #{moduleName}_image_styles_alter(&\\$styles) {
     end
   end
    command 'hook_image_default_styles' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_image_default_styles'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -1809,7 +1681,6 @@ function #{moduleName}_image_default_styles() {
     end
   end
    command 'hook_locale' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_locale'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -1823,7 +1694,6 @@ function #{moduleName}_locale(\\$op = \'groups\') {
     end
   end
    command 'hook_language_init' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_language_init'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -1837,7 +1707,6 @@ function #{moduleName}_language_init() {
     end
   end
    command 'hook_language_switch_links_alter' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_language_switch_links_alter'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -1851,7 +1720,6 @@ function #{moduleName}_language_switch_links_alter(array &\\$links, \\$type, \\$
     end
   end
    command 'hook_language_types_info' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_language_types_info'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -1865,7 +1733,6 @@ function #{moduleName}_language_types_info() {
     end
   end
    command 'hook_language_types_info_alter' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_language_types_info_alter'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -1879,7 +1746,6 @@ function #{moduleName}_language_types_info_alter(array &\\$language_types) {
     end
   end
    command 'hook_language_negotiation_info' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_language_negotiation_info'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -1893,7 +1759,6 @@ function #{moduleName}_language_negotiation_info() {
     end
   end
    command 'hook_language_negotiation_info_alter' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_language_negotiation_info_alter'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -1907,7 +1772,6 @@ function #{moduleName}_language_negotiation_info_alter(array &\\$language_provid
     end
   end
    command 'hook_multilingual_settings_changed' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_multilingual_settings_changed'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -1921,7 +1785,6 @@ function #{moduleName}_multilingual_settings_changed() {
     end
   end
    command 'hook_language_fallback_candidates_alter' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_language_fallback_candidates_alter'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -1935,7 +1798,6 @@ function #{moduleName}_language_fallback_candidates_alter(array &\\$fallback_can
     end
   end
    command 'hook_menu_insert' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_menu_insert'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -1949,7 +1811,6 @@ function #{moduleName}_menu_insert(\\$menu) {
     end
   end
    command 'hook_menu_update' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_menu_update'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -1963,7 +1824,6 @@ function #{moduleName}_menu_update(\\$menu) {
     end
   end
    command 'hook_menu_delete' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_menu_delete'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -1977,7 +1837,6 @@ function #{moduleName}_menu_delete(\\$menu) {
     end
   end
    command 'hook_node_grants' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_node_grants'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -1991,7 +1850,6 @@ function #{moduleName}_node_grants(\\$account, \\$op) {
     end
   end
    command 'hook_node_access_records' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_node_access_records'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -2005,7 +1863,6 @@ function #{moduleName}_node_access_records(\\$node) {
     end
   end
    command 'hook_node_access_records_alter' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_node_access_records_alter'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -2019,7 +1876,6 @@ function #{moduleName}_node_access_records_alter(&\\$grants, \\$node) {
     end
   end
    command 'hook_node_grants_alter' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_node_grants_alter'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -2033,7 +1889,6 @@ function #{moduleName}_node_grants_alter(&\\$grants, \\$account, \\$op) {
     end
   end
    command 'hook_node_operations' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_node_operations'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -2047,7 +1902,6 @@ function #{moduleName}_node_operations() {
     end
   end
    command 'hook_node_delete' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_node_delete'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -2061,7 +1915,6 @@ function #{moduleName}_node_delete(\\$node) {
     end
   end
    command 'hook_node_revision_delete' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_node_revision_delete'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -2075,7 +1928,6 @@ function #{moduleName}_node_revision_delete(\\$node) {
     end
   end
    command 'hook_node_insert' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_node_insert'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -2089,7 +1941,6 @@ function #{moduleName}_node_insert(\\$node) {
     end
   end
    command 'hook_node_load' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_node_load'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -2103,7 +1954,6 @@ function #{moduleName}_node_load(\\$nodes, \\$types) {
     end
   end
    command 'hook_node_access' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_node_access'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -2117,7 +1967,6 @@ function #{moduleName}_node_access(\\$node, \\$op, \\$account) {
     end
   end
    command 'hook_node_prepare' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_node_prepare'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -2131,7 +1980,6 @@ function #{moduleName}_node_prepare(\\$node) {
     end
   end
    command 'hook_node_search_result' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_node_search_result'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -2145,7 +1993,6 @@ function #{moduleName}_node_search_result(\\$node) {
     end
   end
    command 'hook_node_presave' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_node_presave'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -2159,7 +2006,6 @@ function #{moduleName}_node_presave(\\$node) {
     end
   end
    command 'hook_node_update' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_node_update'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -2173,7 +2019,6 @@ function #{moduleName}_node_update(\\$node) {
     end
   end
    command 'hook_node_update_index' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_node_update_index'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -2187,7 +2032,6 @@ function #{moduleName}_node_update_index(\\$node) {
     end
   end
    command 'hook_node_validate' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_node_validate'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -2201,7 +2045,6 @@ function #{moduleName}_node_validate(\\$node, \\$form, &\\$form_state) {
     end
   end
    command 'hook_node_submit' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_node_submit'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -2215,7 +2058,6 @@ function #{moduleName}_node_submit(\\$node, \\$form, &\\$form_state) {
     end
   end
    command 'hook_node_view' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_node_view'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -2229,7 +2071,6 @@ function #{moduleName}_node_view(\\$node, \\$view_mode, \\$langcode) {
     end
   end
    command 'hook_node_view_alter' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_node_view_alter'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -2243,7 +2084,6 @@ function #{moduleName}_node_view_alter(&\\$build) {
     end
   end
    command 'hook_node_info' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_node_info'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -2257,7 +2097,6 @@ function #{moduleName}_node_info() {
     end
   end
    command 'hook_ranking' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_ranking'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -2271,7 +2110,6 @@ function #{moduleName}_ranking() {
     end
   end
    command 'hook_node_type_insert' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_node_type_insert'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -2285,7 +2123,6 @@ function #{moduleName}_node_type_insert(\\$info) {
     end
   end
    command 'hook_node_type_update' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_node_type_update'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -2299,7 +2136,6 @@ function #{moduleName}_node_type_update(\\$info) {
     end
   end
    command 'hook_node_type_delete' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_node_type_delete'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -2313,7 +2149,6 @@ function #{moduleName}_node_type_delete(\\$info) {
     end
   end
    command 'hook_delete' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_delete'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -2327,7 +2162,6 @@ function #{moduleName}_delete(\\$node) {
     end
   end
    command 'hook_prepare' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_prepare'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -2341,7 +2175,6 @@ function #{moduleName}_prepare(\\$node) {
     end
   end
    command 'hook_form' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_form'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -2355,7 +2188,6 @@ function #{moduleName}_form(\\$node, &\\$form_state) {
     end
   end
    command 'hook_insert' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_insert'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -2369,7 +2201,6 @@ function #{moduleName}_insert(\\$node) {
     end
   end
    command 'hook_load' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_load'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -2383,7 +2214,6 @@ function #{moduleName}_load(\\$nodes) {
     end
   end
    command 'hook_update' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_update'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -2397,7 +2227,6 @@ function #{moduleName}_update(\\$node) {
     end
   end
    command 'hook_validate' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_validate'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -2411,7 +2240,6 @@ function #{moduleName}_validate(\\$node, \\$form, &\\$form_state) {
     end
   end
    command 'hook_view' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_view'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -2425,7 +2253,6 @@ function #{moduleName}_view(\\$node, \\$view_mode) {
     end
   end
    command 'hook_openid' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_openid'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -2439,7 +2266,6 @@ function #{moduleName}_openid(\\$op, \\$request) {
     end
   end
    command 'hook_openid_response' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_openid_response'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -2453,7 +2279,6 @@ function #{moduleName}_openid_response(\\$response, \\$account) {
     end
   end
    command 'hook_openid_discovery_method_info' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_openid_discovery_method_info'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -2467,7 +2292,6 @@ function #{moduleName}_openid_discovery_method_info() {
     end
   end
    command 'hook_openid_discovery_method_info_alter' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_openid_discovery_method_info_alter'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -2481,7 +2305,6 @@ function #{moduleName}_openid_discovery_method_info_alter(&\\$methods) {
     end
   end
    command 'hook_openid_normalization_method_info' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_openid_normalization_method_info'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -2495,7 +2318,6 @@ function #{moduleName}_openid_normalization_method_info() {
     end
   end
    command 'hook_openid_normalization_method_info_alter' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_openid_normalization_method_info_alter'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -2509,7 +2331,6 @@ function #{moduleName}_openid_normalization_method_info_alter(&\\$methods) {
     end
   end
    command 'hook_overlay_parent_initialize' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_overlay_parent_initialize'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -2523,7 +2344,6 @@ function #{moduleName}_overlay_parent_initialize() {
     end
   end
    command 'hook_overlay_child_initialize' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_overlay_child_initialize'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -2537,7 +2357,6 @@ function #{moduleName}_overlay_child_initialize() {
     end
   end
    command 'hook_path_insert' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_path_insert'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -2551,7 +2370,6 @@ function #{moduleName}_path_insert(\\$path) {
     end
   end
    command 'hook_path_update' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_path_update'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -2565,7 +2383,6 @@ function #{moduleName}_path_update(\\$path) {
     end
   end
    command 'hook_path_delete' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_path_delete'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -2579,7 +2396,6 @@ function #{moduleName}_path_delete(\\$path) {
     end
   end
    command 'hook_rdf_mapping' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_rdf_mapping'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -2593,7 +2409,6 @@ function #{moduleName}_rdf_mapping() {
     end
   end
    command 'hook_rdf_namespaces' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_rdf_namespaces'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -2607,7 +2422,6 @@ function #{moduleName}_rdf_namespaces() {
     end
   end
    command 'hook_search_info' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_search_info'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -2621,7 +2435,6 @@ function #{moduleName}_search_info() {
     end
   end
    command 'sample_search_conditions_callback' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'sample_search_conditions_callback'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -2635,7 +2448,6 @@ function function sample_search_conditions_callback(\\$keys) {
     end
   end
    command 'hook_search_access' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_search_access'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -2649,7 +2461,6 @@ function #{moduleName}_search_access() {
     end
   end
    command 'hook_search_reset' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_search_reset'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -2663,7 +2474,6 @@ function #{moduleName}_search_reset() {
     end
   end
    command 'hook_search_status' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_search_status'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -2677,7 +2487,6 @@ function #{moduleName}_search_status() {
     end
   end
    command 'hook_search_admin' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_search_admin'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -2691,7 +2500,6 @@ function #{moduleName}_search_admin() {
     end
   end
    command 'hook_search_execute' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_search_execute'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -2705,7 +2513,6 @@ function #{moduleName}_search_execute(\\$keys = NULL, \\$conditions = NULL) {
     end
   end
    command 'hook_search_page' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_search_page'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -2719,7 +2526,6 @@ function #{moduleName}_search_page(\\$results) {
     end
   end
    command 'hook_search_preprocess' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_search_preprocess'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -2733,7 +2539,6 @@ function #{moduleName}_search_preprocess(\\$text) {
     end
   end
    command 'hook_update_index' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_update_index'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -2747,7 +2552,6 @@ function #{moduleName}_update_index() {
     end
   end
    command 'hook_shortcut_default_set' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_shortcut_default_set'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -2761,7 +2565,6 @@ function #{moduleName}_shortcut_default_set(\\$account) {
     end
   end
    command 'hook_simpletest_alter' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_simpletest_alter'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -2775,7 +2578,6 @@ function #{moduleName}_simpletest_alter(&\\$groups) {
     end
   end
    command 'hook_test_group_started' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_test_group_started'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -2789,7 +2591,6 @@ function #{moduleName}_test_group_started() {
     end
   end
    command 'hook_test_group_finished' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_test_group_finished'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -2803,7 +2604,6 @@ function #{moduleName}_test_group_finished() {
     end
   end
    command 'hook_test_finished' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_test_finished'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -2817,7 +2617,6 @@ function #{moduleName}_test_finished(\\$results) {
     end
   end
    command 'hook_hook_info' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_hook_info'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -2831,7 +2630,6 @@ function #{moduleName}_hook_info() {
     end
   end
    command 'hook_hook_info_alter' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_hook_info_alter'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -2845,7 +2643,6 @@ function #{moduleName}_hook_info_alter(&\\$hooks) {
     end
   end
    command 'hook_entity_info' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_entity_info'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -2859,7 +2656,6 @@ function #{moduleName}_entity_info() {
     end
   end
    command 'hook_entity_info_alter' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_entity_info_alter'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -2873,7 +2669,6 @@ function #{moduleName}_entity_info_alter(&\\$entity_info) {
     end
   end
    command 'hook_entity_load' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_entity_load'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -2887,7 +2682,6 @@ function #{moduleName}_entity_load(\\$entities, \\$type) {
     end
   end
    command 'hook_entity_presave' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_entity_presave'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -2901,7 +2695,6 @@ function #{moduleName}_entity_presave(\\$entity, \\$type) {
     end
   end
    command 'hook_entity_insert' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_entity_insert'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -2915,7 +2708,6 @@ function #{moduleName}_entity_insert(\\$entity, \\$type) {
     end
   end
    command 'hook_entity_update' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_entity_update'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -2929,7 +2721,6 @@ function #{moduleName}_entity_update(\\$entity, \\$type) {
     end
   end
    command 'hook_entity_delete' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_entity_delete'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -2943,7 +2734,6 @@ function #{moduleName}_entity_delete(\\$entity, \\$type) {
     end
   end
    command 'hook_entity_query_alter' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_entity_query_alter'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -2957,7 +2747,6 @@ function #{moduleName}_entity_query_alter(\\$query) {
     end
   end
    command 'hook_entity_view' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_entity_view'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -2971,7 +2760,6 @@ function #{moduleName}_entity_view(\\$entity, \\$type, \\$view_mode, \\$langcode
     end
   end
    command 'hook_entity_view_alter' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_entity_view_alter'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -2985,7 +2773,6 @@ function #{moduleName}_entity_view_alter(&\\$build, \\$type) {
     end
   end
    command 'hook_admin_paths' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_admin_paths'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -2999,7 +2786,6 @@ function #{moduleName}_admin_paths() {
     end
   end
    command 'hook_admin_paths_alter' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_admin_paths_alter'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -3013,7 +2799,6 @@ function #{moduleName}_admin_paths_alter(&\\$paths) {
     end
   end
    command 'hook_entity_prepare_view' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_entity_prepare_view'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -3027,7 +2812,6 @@ function #{moduleName}_entity_prepare_view(\\$entities, \\$type) {
     end
   end
    command 'hook_cron' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_cron'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -3041,7 +2825,6 @@ function #{moduleName}_cron() {
     end
   end
    command 'hook_cron_queue_info' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_cron_queue_info'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -3055,7 +2838,6 @@ function #{moduleName}_cron_queue_info() {
     end
   end
    command 'hook_cron_queue_info_alter' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_cron_queue_info_alter'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -3069,7 +2851,6 @@ function #{moduleName}_cron_queue_info_alter(&\\$queues) {
     end
   end
    command 'hook_element_info' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_element_info'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -3083,7 +2864,6 @@ function #{moduleName}_element_info() {
     end
   end
    command 'hook_element_info_alter' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_element_info_alter'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -3097,7 +2877,6 @@ function #{moduleName}_element_info_alter(&\\$type) {
     end
   end
    command 'hook_exit' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_exit'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -3111,7 +2890,6 @@ function #{moduleName}_exit(\\$destination = NULL) {
     end
   end
    command 'hook_js_alter' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_js_alter'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -3125,7 +2903,6 @@ function #{moduleName}_js_alter(&\\$javascript) {
     end
   end
    command 'hook_library' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_library'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -3139,7 +2916,6 @@ function #{moduleName}_library() {
     end
   end
    command 'hook_library_alter' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_library_alter'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -3153,7 +2929,6 @@ function #{moduleName}_library_alter(&\\$libraries, \\$module) {
     end
   end
    command 'hook_css_alter' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_css_alter'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -3167,7 +2942,6 @@ function #{moduleName}_css_alter(&\\$css) {
     end
   end
    command 'hook_ajax_render_alter' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_ajax_render_alter'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -3181,7 +2955,6 @@ function #{moduleName}_ajax_render_alter(\\$commands) {
     end
   end
    command 'hook_page_build' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_page_build'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -3195,7 +2968,6 @@ function #{moduleName}_page_build(&\\$page) {
     end
   end
    command 'hook_menu_get_item_alter' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_menu_get_item_alter'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -3209,7 +2981,6 @@ function #{moduleName}_menu_get_item_alter(&\\$router_item, \\$path, \\$original
     end
   end
    command 'hook_menu' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_menu'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -3223,7 +2994,6 @@ function #{moduleName}_menu() {
     end
   end
    command 'hook_menu_alter' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_menu_alter'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -3237,7 +3007,6 @@ function #{moduleName}_menu_alter(&\\$items) {
     end
   end
    command 'hook_menu_link_alter' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_menu_link_alter'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -3251,7 +3020,6 @@ function #{moduleName}_menu_link_alter(&\\$item) {
     end
   end
    command 'hook_translated_menu_link_alter' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_translated_menu_link_alter'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -3265,7 +3033,6 @@ function #{moduleName}_translated_menu_link_alter(&\\$item, \\$map) {
     end
   end
    command 'hook_menu_link_insert' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_menu_link_insert'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -3279,7 +3046,6 @@ function #{moduleName}_menu_link_insert(\\$link) {
     end
   end
    command 'hook_menu_link_update' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_menu_link_update'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -3293,7 +3059,6 @@ function #{moduleName}_menu_link_update(\\$link) {
     end
   end
    command 'hook_menu_link_delete' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_menu_link_delete'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -3307,7 +3072,6 @@ function #{moduleName}_menu_link_delete(\\$link) {
     end
   end
    command 'hook_menu_local_tasks_alter' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_menu_local_tasks_alter'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -3321,7 +3085,6 @@ function #{moduleName}_menu_local_tasks_alter(&\\$data, \\$router_item, \\$root_
     end
   end
    command 'hook_menu_breadcrumb_alter' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_menu_breadcrumb_alter'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -3335,7 +3098,6 @@ function #{moduleName}_menu_breadcrumb_alter(&\\$active_trail, \\$item) {
     end
   end
    command 'hook_menu_contextual_links_alter' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_menu_contextual_links_alter'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -3349,7 +3111,6 @@ function #{moduleName}_menu_contextual_links_alter(&\\$links, \\$router_item, \\
     end
   end
    command 'hook_page_alter' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_page_alter'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -3363,7 +3124,6 @@ function #{moduleName}_page_alter(&\\$page) {
     end
   end
    command 'hook_form_alter' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_form_alter'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -3377,7 +3137,6 @@ function #{moduleName}_form_alter(&\\$form, &\\$form_state, \\$form_id) {
     end
   end
    command 'hook_form_FORM_ID_alter' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_form_FORM_ID_alter'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -3391,7 +3150,6 @@ function #{moduleName}_form_FORM_ID_alter(&\\$form, &\\$form_state, \\$form_id) 
     end
   end
    command 'hook_form_BASE_FORM_ID_alter' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_form_BASE_FORM_ID_alter'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -3405,7 +3163,6 @@ function #{moduleName}_form_BASE_FORM_ID_alter(&\\$form, &\\$form_state, \\$form
     end
   end
    command 'hook_forms' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_forms'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -3419,7 +3176,6 @@ function #{moduleName}_forms(\\$form_id, \\$args) {
     end
   end
    command 'hook_boot' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_boot'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -3433,7 +3189,6 @@ function #{moduleName}_boot() {
     end
   end
    command 'hook_init' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_init'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -3447,7 +3202,6 @@ function #{moduleName}_init() {
     end
   end
    command 'hook_image_toolkits' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_image_toolkits'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -3461,7 +3215,6 @@ function #{moduleName}_image_toolkits() {
     end
   end
    command 'hook_mail_alter' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_mail_alter'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -3475,7 +3228,6 @@ function #{moduleName}_mail_alter(&\\$message) {
     end
   end
    command 'hook_module_implements_alter' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_module_implements_alter'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -3489,7 +3241,6 @@ function #{moduleName}_module_implements_alter(&\\$implementations, \\$hook) {
     end
   end
    command 'hook_system_info_alter' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_system_info_alter'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -3503,7 +3254,6 @@ function #{moduleName}_system_info_alter(&\\$info, \\$file, \\$type) {
     end
   end
    command 'hook_permission' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_permission'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -3517,7 +3267,6 @@ function #{moduleName}_permission() {
     end
   end
    command 'hook_theme' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_theme'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -3531,7 +3280,6 @@ function #{moduleName}_theme(\\$existing, \\$type, \\$theme, \\$path) {
     end
   end
    command 'hook_theme_registry_alter' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_theme_registry_alter'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -3545,7 +3293,6 @@ function #{moduleName}_theme_registry_alter(&\\$theme_registry) {
     end
   end
    command 'hook_custom_theme' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_custom_theme'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -3559,7 +3306,6 @@ function #{moduleName}_custom_theme() {
     end
   end
    command 'hook_xmlrpc' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_xmlrpc'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -3573,7 +3319,6 @@ function #{moduleName}_xmlrpc() {
     end
   end
    command 'hook_xmlrpc_alter' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_xmlrpc_alter'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -3587,7 +3332,6 @@ function #{moduleName}_xmlrpc_alter(&\\$methods) {
     end
   end
    command 'hook_watchdog' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_watchdog'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -3601,7 +3345,6 @@ function #{moduleName}_watchdog(array \\$log_entry) {
     end
   end
    command 'hook_mail' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_mail'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -3615,7 +3358,6 @@ function #{moduleName}_mail(\\$key, &\\$message, \\$params) {
     end
   end
    command 'hook_flush_caches' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_flush_caches'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -3629,7 +3371,6 @@ function #{moduleName}_flush_caches() {
     end
   end
    command 'hook_modules_installed' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_modules_installed'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -3643,7 +3384,6 @@ function #{moduleName}_modules_installed(\\$modules) {
     end
   end
    command 'hook_modules_enabled' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_modules_enabled'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -3657,7 +3397,6 @@ function #{moduleName}_modules_enabled(\\$modules) {
     end
   end
    command 'hook_modules_disabled' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_modules_disabled'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -3671,7 +3410,6 @@ function #{moduleName}_modules_disabled(\\$modules) {
     end
   end
    command 'hook_modules_uninstalled' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_modules_uninstalled'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -3685,7 +3423,6 @@ function #{moduleName}_modules_uninstalled(\\$modules) {
     end
   end
    command 'hook_stream_wrappers' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_stream_wrappers'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -3699,7 +3436,6 @@ function #{moduleName}_stream_wrappers() {
     end
   end
    command 'hook_stream_wrappers_alter' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_stream_wrappers_alter'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -3713,7 +3449,6 @@ function #{moduleName}_stream_wrappers_alter(&\\$wrappers) {
     end
   end
    command 'hook_file_load' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_file_load'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -3727,7 +3462,6 @@ function #{moduleName}_file_load(\\$files) {
     end
   end
    command 'hook_file_validate' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_file_validate'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -3741,7 +3475,6 @@ function #{moduleName}_file_validate(&\\$file) {
     end
   end
    command 'hook_file_presave' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_file_presave'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -3755,7 +3488,6 @@ function #{moduleName}_file_presave(\\$file) {
     end
   end
    command 'hook_file_insert' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_file_insert'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -3769,7 +3501,6 @@ function #{moduleName}_file_insert(\\$file) {
     end
   end
    command 'hook_file_update' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_file_update'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -3783,7 +3514,6 @@ function #{moduleName}_file_update(\\$file) {
     end
   end
    command 'hook_file_copy' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_file_copy'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -3797,7 +3527,6 @@ function #{moduleName}_file_copy(\\$file, \\$source) {
     end
   end
    command 'hook_file_move' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_file_move'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -3811,7 +3540,6 @@ function #{moduleName}_file_move(\\$file, \\$source) {
     end
   end
    command 'hook_file_delete' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_file_delete'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -3825,7 +3553,6 @@ function #{moduleName}_file_delete(\\$file) {
     end
   end
    command 'hook_file_download' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_file_download'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -3839,7 +3566,6 @@ function #{moduleName}_file_download(\\$uri) {
     end
   end
    command 'hook_file_url_alter' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_file_url_alter'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -3853,7 +3579,6 @@ function #{moduleName}_file_url_alter(&\\$uri) {
     end
   end
    command 'hook_requirements' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_requirements'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -3867,7 +3592,6 @@ function #{moduleName}_requirements(\\$phase) {
     end
   end
    command 'hook_schema' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_schema'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -3881,7 +3605,6 @@ function #{moduleName}_schema() {
     end
   end
    command 'hook_schema_alter' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_schema_alter'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -3895,7 +3618,6 @@ function #{moduleName}_schema_alter(&\\$schema) {
     end
   end
    command 'hook_query_alter' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_query_alter'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -3909,7 +3631,6 @@ function #{moduleName}_query_alter(QueryAlterableInterface \\$query) {
     end
   end
    command 'hook_query_TAG_alter' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_query_TAG_alter'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -3923,7 +3644,6 @@ function #{moduleName}_query_TAG_alter(QueryAlterableInterface \\$query) {
     end
   end
    command 'hook_install' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_install'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -3937,21 +3657,23 @@ function #{moduleName}_install() {
     end
   end
    command 'hook_update_N' do |cmd|
-    require 'functions.rb'
-    cmd.trigger = 'hook_update_N'
+    cmd.trigger = 'hook_update_'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
+    options = {}
+    options[:title] = "Update Number"
+    options[:prompt] = "What is the update number?"
+    update_number = Ruble::UI.request_string(options)
      "
 /**
  * Implements hook_update_N().
  */
-function #{moduleName}_update_N(&\\$sandbox) { 
+function #{moduleName}_update_#{update_number}(&\\$sandbox) { 
   ${1}
 }"
     end
   end
    command 'hook_update_dependencies' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_update_dependencies'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -3965,7 +3687,6 @@ function #{moduleName}_update_dependencies() {
     end
   end
    command 'hook_update_last_removed' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_update_last_removed'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -3979,7 +3700,6 @@ function #{moduleName}_update_last_removed() {
     end
   end
    command 'hook_uninstall' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_uninstall'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -3993,7 +3713,6 @@ function #{moduleName}_uninstall() {
     end
   end
    command 'hook_enable' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_enable'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -4007,7 +3726,6 @@ function #{moduleName}_enable() {
     end
   end
    command 'hook_disable' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_disable'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -4021,7 +3739,6 @@ function #{moduleName}_disable() {
     end
   end
    command 'hook_registry_files_alter' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_registry_files_alter'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -4035,7 +3752,6 @@ function #{moduleName}_registry_files_alter(&\\$files, \\$modules) {
     end
   end
    command 'hook_install_tasks' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_install_tasks'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -4049,7 +3765,6 @@ function #{moduleName}_install_tasks() {
     end
   end
    command 'hook_drupal_goto_alter' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_drupal_goto_alter'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -4063,7 +3778,6 @@ function #{moduleName}_drupal_goto_alter(&\\$path, &\\$options, &\\$http_respons
     end
   end
    command 'hook_html_head_alter' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_html_head_alter'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -4077,7 +3791,6 @@ function #{moduleName}_html_head_alter(&\\$head_elements) {
     end
   end
    command 'hook_install_tasks_alter' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_install_tasks_alter'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -4091,7 +3804,6 @@ function #{moduleName}_install_tasks_alter(&\\$tasks, \\$install_state) {
     end
   end
    command 'hook_file_mimetype_mapping_alter' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_file_mimetype_mapping_alter'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -4105,7 +3817,6 @@ function #{moduleName}_file_mimetype_mapping_alter(&\\$mapping) {
     end
   end
    command 'hook_action_info' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_action_info'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -4119,7 +3830,6 @@ function #{moduleName}_action_info() {
     end
   end
    command 'hook_actions_delete' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_actions_delete'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -4133,7 +3843,6 @@ function #{moduleName}_actions_delete(\\$aid) {
     end
   end
    command 'hook_action_info_alter' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_action_info_alter'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -4147,7 +3856,6 @@ function #{moduleName}_action_info_alter(&\\$actions) {
     end
   end
    command 'hook_archiver_info' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_archiver_info'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -4161,7 +3869,6 @@ function #{moduleName}_archiver_info() {
     end
   end
    command 'hook_archiver_info_alter' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_archiver_info_alter'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -4175,7 +3882,6 @@ function #{moduleName}_archiver_info_alter(&\\$info) {
     end
   end
    command 'hook_date_format_types' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_date_format_types'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -4189,7 +3895,6 @@ function #{moduleName}_date_format_types() {
     end
   end
    command 'hook_date_format_types_alter' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_date_format_types_alter'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -4203,7 +3908,6 @@ function #{moduleName}_date_format_types_alter(&\\$types) {
     end
   end
    command 'hook_date_formats' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_date_formats'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -4217,7 +3921,6 @@ function #{moduleName}_date_formats() {
     end
   end
    command 'hook_date_formats_alter' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_date_formats_alter'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -4231,7 +3934,6 @@ function #{moduleName}_date_formats_alter(&\\$formats) {
     end
   end
    command 'hook_page_delivery_callback_alter' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_page_delivery_callback_alter'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -4245,7 +3947,6 @@ function #{moduleName}_page_delivery_callback_alter(&\\$callback) {
     end
   end
    command 'hook_system_themes_page_alter' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_system_themes_page_alter'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -4259,7 +3960,6 @@ function #{moduleName}_system_themes_page_alter(&\\$theme_groups) {
     end
   end
    command 'hook_url_inbound_alter' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_url_inbound_alter'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -4273,7 +3973,6 @@ function #{moduleName}_url_inbound_alter(&\\$path, \\$original_path, \\$path_lan
     end
   end
    command 'hook_url_outbound_alter' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_url_outbound_alter'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -4287,7 +3986,6 @@ function #{moduleName}_url_outbound_alter(&\\$path, &\\$options, \\$original_pat
     end
   end
    command 'hook_username_alter' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_username_alter'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -4301,7 +3999,6 @@ function #{moduleName}_username_alter(&\\$name, \\$account) {
     end
   end
    command 'hook_tokens' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_tokens'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -4315,7 +4012,6 @@ function #{moduleName}_tokens(\\$type, \\$tokens, array \\$data = array(), array
     end
   end
    command 'hook_tokens_alter' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_tokens_alter'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -4329,7 +4025,6 @@ function #{moduleName}_tokens_alter(array &\\$replacements, array \\$context) {
     end
   end
    command 'hook_token_info' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_token_info'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -4343,7 +4038,6 @@ function #{moduleName}_token_info() {
     end
   end
    command 'hook_token_info_alter' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_token_info_alter'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -4357,7 +4051,6 @@ function #{moduleName}_token_info_alter(&\\$data) {
     end
   end
    command 'hook_batch_alter' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_batch_alter'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -4371,7 +4064,6 @@ function #{moduleName}_batch_alter(&\\$batch) {
     end
   end
    command 'hook_updater_info' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_updater_info'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -4385,7 +4077,6 @@ function #{moduleName}_updater_info() {
     end
   end
    command 'hook_updater_info_alter' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_updater_info_alter'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -4399,7 +4090,6 @@ function #{moduleName}_updater_info_alter(&\\$updaters) {
     end
   end
    command 'hook_countries_alter' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_countries_alter'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -4413,7 +4103,6 @@ function #{moduleName}_countries_alter(&\\$countries) {
     end
   end
    command 'hook_menu_site_status_alter' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_menu_site_status_alter'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -4427,7 +4116,6 @@ function #{moduleName}_menu_site_status_alter(&\\$menu_site_status, \\$path) {
     end
   end
    command 'hook_filetransfer_info' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_filetransfer_info'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -4441,7 +4129,6 @@ function #{moduleName}_filetransfer_info() {
     end
   end
    command 'hook_filetransfer_info_alter' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_filetransfer_info_alter'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -4455,7 +4142,6 @@ function #{moduleName}_filetransfer_info_alter(&\\$filetransfer_info) {
     end
   end
    command 'hook_taxonomy_vocabulary_load' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_taxonomy_vocabulary_load'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -4469,7 +4155,6 @@ function #{moduleName}_taxonomy_vocabulary_load(\\$vocabularies) {
     end
   end
    command 'hook_taxonomy_vocabulary_presave' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_taxonomy_vocabulary_presave'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -4483,7 +4168,6 @@ function #{moduleName}_taxonomy_vocabulary_presave(\\$vocabulary) {
     end
   end
    command 'hook_taxonomy_vocabulary_insert' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_taxonomy_vocabulary_insert'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -4497,7 +4181,6 @@ function #{moduleName}_taxonomy_vocabulary_insert(\\$vocabulary) {
     end
   end
    command 'hook_taxonomy_vocabulary_update' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_taxonomy_vocabulary_update'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -4511,7 +4194,6 @@ function #{moduleName}_taxonomy_vocabulary_update(\\$vocabulary) {
     end
   end
    command 'hook_taxonomy_vocabulary_delete' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_taxonomy_vocabulary_delete'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -4525,7 +4207,6 @@ function #{moduleName}_taxonomy_vocabulary_delete(\\$vocabulary) {
     end
   end
    command 'hook_taxonomy_term_load' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_taxonomy_term_load'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -4539,7 +4220,6 @@ function #{moduleName}_taxonomy_term_load(\\$terms) {
     end
   end
    command 'hook_taxonomy_term_presave' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_taxonomy_term_presave'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -4553,7 +4233,6 @@ function #{moduleName}_taxonomy_term_presave(\\$term) {
     end
   end
    command 'hook_taxonomy_term_insert' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_taxonomy_term_insert'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -4567,7 +4246,6 @@ function #{moduleName}_taxonomy_term_insert(\\$term) {
     end
   end
    command 'hook_taxonomy_term_update' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_taxonomy_term_update'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -4581,7 +4259,6 @@ function #{moduleName}_taxonomy_term_update(\\$term) {
     end
   end
    command 'hook_taxonomy_term_delete' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_taxonomy_term_delete'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -4595,7 +4272,6 @@ function #{moduleName}_taxonomy_term_delete(\\$term) {
     end
   end
    command 'hook_taxonomy_term_view_alter' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_taxonomy_term_view_alter'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -4609,7 +4285,6 @@ function #{moduleName}_taxonomy_term_view_alter(&\\$build) {
     end
   end
    command 'hook_trigger_info' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_trigger_info'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -4623,7 +4298,6 @@ function #{moduleName}_trigger_info() {
     end
   end
    command 'hook_trigger_info_alter' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_trigger_info_alter'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -4637,7 +4311,6 @@ function #{moduleName}_trigger_info_alter(&\\$triggers) {
     end
   end
    command 'hook_update_projects_alter' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_update_projects_alter'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -4651,7 +4324,6 @@ function #{moduleName}_update_projects_alter(&\\$projects) {
     end
   end
    command 'hook_update_status_alter' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_update_status_alter'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -4665,7 +4337,6 @@ function #{moduleName}_update_status_alter(&\\$projects) {
     end
   end
    command 'hook_verify_update_archive' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_verify_update_archive'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -4679,7 +4350,6 @@ function #{moduleName}_verify_update_archive(\\$project, \\$archive_file, \\$dir
     end
   end
    command 'hook_user_load' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_user_load'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -4693,7 +4363,6 @@ function #{moduleName}_user_load(\\$users) {
     end
   end
    command 'hook_user_delete' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_user_delete'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -4707,7 +4376,6 @@ function #{moduleName}_user_delete(\\$account) {
     end
   end
    command 'hook_user_cancel' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_user_cancel'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -4721,7 +4389,6 @@ function #{moduleName}_user_cancel(\\$edit, \\$account, \\$method) {
     end
   end
    command 'hook_user_cancel_methods_alter' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_user_cancel_methods_alter'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -4735,7 +4402,6 @@ function #{moduleName}_user_cancel_methods_alter(&\\$methods) {
     end
   end
    command 'hook_user_operations' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_user_operations'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -4749,7 +4415,6 @@ function #{moduleName}_user_operations() {
     end
   end
    command 'hook_user_categories' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_user_categories'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -4763,7 +4428,6 @@ function #{moduleName}_user_categories() {
     end
   end
    command 'hook_user_presave' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_user_presave'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -4777,7 +4441,6 @@ function #{moduleName}_user_presave(&\\$edit, \\$account, \\$category) {
     end
   end
    command 'hook_user_insert' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_user_insert'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -4791,7 +4454,6 @@ function #{moduleName}_user_insert(&\\$edit, \\$account, \\$category) {
     end
   end
    command 'hook_user_update' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_user_update'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -4805,7 +4467,6 @@ function #{moduleName}_user_update(&\\$edit, \\$account, \\$category) {
     end
   end
    command 'hook_user_login' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_user_login'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -4819,7 +4480,6 @@ function #{moduleName}_user_login(&\\$edit, \\$account) {
     end
   end
    command 'hook_user_logout' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_user_logout'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -4833,7 +4493,6 @@ function #{moduleName}_user_logout(\\$account) {
     end
   end
    command 'hook_user_view' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_user_view'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -4847,7 +4506,6 @@ function #{moduleName}_user_view(\\$account, \\$view_mode, \\$langcode) {
     end
   end
    command 'hook_user_view_alter' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_user_view_alter'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -4861,7 +4519,6 @@ function #{moduleName}_user_view_alter(&\\$build) {
     end
   end
    command 'hook_user_role_insert' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_user_role_insert'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -4875,7 +4532,6 @@ function #{moduleName}_user_role_insert(\\$role) {
     end
   end
    command 'hook_user_role_update' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_user_role_update'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -4889,7 +4545,6 @@ function #{moduleName}_user_role_update(\\$role) {
     end
   end
    command 'hook_user_role_delete' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_user_role_delete'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
@@ -4904,7 +4559,6 @@ function #{moduleName}_user_role_delete(\\$role) {
   end
 
 command 'hook_CUSTOM' do |cmd|
-    require 'functions.rb'
     cmd.trigger = 'hook_CUSTOM'
     cmd.invoke do |context|
     moduleName = find_module_name(ENV['TM_DIRECTORY'])
