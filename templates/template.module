@@ -1,0 +1,6 @@
+<?php
+/**
+ * @file
+ *   Core & Contrib hooks and other primary functions
+ */
+${hooks}

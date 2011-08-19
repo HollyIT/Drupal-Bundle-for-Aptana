@@ -1,0 +1,6 @@
+<?php
+/**
+ * @file
+ *   Install, Uninstall, Schema, and Update functionality
+ */
+${hooks}
